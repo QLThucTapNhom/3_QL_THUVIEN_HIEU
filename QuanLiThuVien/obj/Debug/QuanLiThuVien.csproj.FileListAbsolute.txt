@@ -1,0 +1,16 @@
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\bin\Debug\QuanLiCuaHang.exe.config
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\bin\Debug\QuanLiCuaHang.exe
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\bin\Debug\QuanLiCuaHang.pdb
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiThuVien.csprojAssemblyReference.cache
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.GiaoDienChinh.resources
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.DangNhap.resources
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.QuanLySach.resources
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.TacGia.resources
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.DocGia.resources
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.NXB.resources
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.NgươiQuanLy.resources
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.Properties.Resources.resources
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiThuVien.csproj.GenerateResource.cache
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiThuVien.csproj.CoreCompileInputs.cache
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.exe
+C:\Users\HP\3D Objects\qLTV\drive-download-20200323T035833Z-001\QuanLiCuaHang\obj\Debug\QuanLiCuaHang.pdb
