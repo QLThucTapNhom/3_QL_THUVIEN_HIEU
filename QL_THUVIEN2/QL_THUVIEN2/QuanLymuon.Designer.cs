@@ -183,9 +183,9 @@
             this.button9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button9.Location = new System.Drawing.Point(10, 143);
+            this.button9.Location = new System.Drawing.Point(7, 143);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(127, 59);
+            this.button9.Size = new System.Drawing.Size(130, 59);
             this.button9.TabIndex = 28;
             this.button9.Text = "Xóa";
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -366,7 +366,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel2.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel2.Controls.Add(this.groupBox4);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
