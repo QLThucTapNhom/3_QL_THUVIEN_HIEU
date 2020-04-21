@@ -37,44 +37,44 @@ namespace QL_THUVIEN2
             panelqlsach.Enabled = false;
             cls.KetNoi();
             ttcnma.Enabled = false;
-           
-           
-            
+
+
+
         }
         private void update()
-        {           
+        {
             string s = ttcnngaysinh.Value.Year + "/" + ttcnngaysinh.Value.Month + "/" + ttcnngaysinh.Value.Day;
-           string cmd = "update NHANVIEN set TenNV=N'" + ttcnten.Text + "',GioiTinh=N'" + ttcngioitinh.Text + "',DiaChi=N'" + ttcndiachi.Text + "',SDT_EMAIL='" + ttcnsdt.Text + "',NgaySinh=convert(smalldatetime,'" + s.ToString() + "') where Taikhoan='"+ttcnma.Text+"'";
+            string cmd = "update NHANVIEN set TenNV=N'" + ttcnten.Text + "',GioiTinh=N'" + ttcngioitinh.Text + "',DiaChi=N'" + ttcndiachi.Text + "',SDT_EMAIL='" + ttcnsdt.Text + "',NgaySinh=convert(smalldatetime,'" + s.ToString() + "') where Taikhoan='" + ttcnma.Text + "'";
             //  cmd.ExecuteNonQuery();
             cls.ThucThiSQLTheoKetNoi(cmd);
 
         }
         private void delete()
         {
-           
-                string sql = "delete from NHANVIEN where TaiKhoan='" + ttcnma.Text + "'";
-                cls.ThucThiSQLTheoKetNoi(sql);
-            
+
+            string sql = "delete from NHANVIEN where TaiKhoan='" + ttcnma.Text + "'";
+            cls.ThucThiSQLTheoKetNoi(sql);
+
         }
         private void insert()
         {
-           
-             
-            string tk = "select COUNT(TaiKhoan) from NHANVIEN WHERE TaiKhoan='" + ttcnma.Text + "'";
-                int slg = cls.CheckID(tk);
-                //(int)sl.ExecuteScalar();
-                if (slg > 0) MessageBox.Show("Tài khoản này đã tồn tại");
-                else
-                {
-                    string s = ttcnngaysinh.Value.Year + "/" + ttcnngaysinh.Value.Month + "/" + ttcnngaysinh.Value.Day;
-                    string sql =
-                        "insert into NHANVIEN(TaiKhoan,TenNV,GioiTinh,DiaChi,SDT_EMAIL,NgaySinh) values('" + ttcnma.Text + "',N'" + ttcnten.Text + "',N'" + ttcngioitinh.Text + "',N'" + ttcndiachi.Text + "','" + ttcnsdt.Text + "'," + s + ")";
 
-                    
-                    cls.ThucThiSQLTheoKetNoi(sql);
-                }
-            
-         
+
+            string tk = "select COUNT(TaiKhoan) from NHANVIEN WHERE TaiKhoan='" + ttcnma.Text + "'";
+            int slg = cls.CheckID(tk);
+            //(int)sl.ExecuteScalar();
+            if (slg > 0) MessageBox.Show("Tài khoản này đã tồn tại");
+            else
+            {
+                string s = ttcnngaysinh.Value.Year + "/" + ttcnngaysinh.Value.Month + "/" + ttcnngaysinh.Value.Day;
+                string sql =
+                    "insert into NHANVIEN(TaiKhoan,TenNV,GioiTinh,DiaChi,SDT_EMAIL,NgaySinh) values('" + ttcnma.Text + "',N'" + ttcnten.Text + "',N'" + ttcngioitinh.Text + "',N'" + ttcndiachi.Text + "','" + ttcnsdt.Text + "'," + s + ")";
+
+
+                cls.ThucThiSQLTheoKetNoi(sql);
+            }
+
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -100,7 +100,7 @@ namespace QL_THUVIEN2
                 bttdangnhap.Enabled = true;
                 MessageBox.Show("Bạn đã đăng xuất!");
                 lbThongBao.Show();
-            } 
+            }
             //panel6.Visible=true;
         }
 
@@ -114,8 +114,8 @@ namespace QL_THUVIEN2
 
         private void button8_Click(object sender, EventArgs e)
         {
-            
-            TTTaiKhoan frm= new TTTaiKhoan();
+
+            TTTaiKhoan frm = new TTTaiKhoan();
             frm.Message = txtdntaikhoan.Text;
             frm.MK = txtdnmatkhau.Text;
             frm.ShowDialog();
@@ -145,7 +145,7 @@ namespace QL_THUVIEN2
      
         private void button22_Click(object sender, EventArgs e)
         {
-            
+
             cls.KetNoi();
             tendn = txtdntaikhoan.Text;
             matkhau = txtdnmatkhau.Text;
@@ -154,13 +154,13 @@ namespace QL_THUVIEN2
                 object Q = cls.layGiaTri("select Quyenhan from NHANVIEN where TaiKhoan = '" + tendn + "' and MatKhau = '" + matkhau + "'");
                 if (Q == null)
                 {
-                    MessageBox.Show("Tài khoản mật khẩu không đúng!","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show("Tài khoản mật khẩu không đúng!", "", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtdntaikhoan.Clear();
                     txtdnmatkhau.Clear();
                 }
                 else
                 {
-                    MessageBox.Show("Đăng nhập thành công!","",MessageBoxButtons.OK);
+                    MessageBox.Show("Đăng nhập thành công!", "", MessageBoxButtons.OK);
                     quyen = Convert.ToString(Q);
                     if (quyen == "admin")
                     {
@@ -178,7 +178,7 @@ namespace QL_THUVIEN2
                     }
                     if (quyen == "user")
                     {
-                      
+
                         panelqlphieu.Enabled = true;
                         panelqldocgia.Enabled = true;
                         panelbaocao.Enabled = true;
@@ -232,7 +232,7 @@ namespace QL_THUVIEN2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-        
+
             update();
             MessageBox.Show("Edit staff successfully!");
             HienThi();
