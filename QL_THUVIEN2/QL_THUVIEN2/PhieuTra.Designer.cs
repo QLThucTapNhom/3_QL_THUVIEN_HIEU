@@ -100,11 +100,11 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button5.Location = new System.Drawing.Point(469, 228);
+            this.button5.Location = new System.Drawing.Point(484, 222);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(101, 29);
             this.button5.TabIndex = 46;
-            this.button5.Text = "Exit";
+            this.button5.Text = "Thoát";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -112,11 +112,11 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(365, 228);
+            this.button4.Location = new System.Drawing.Point(365, 222);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(98, 29);
             this.button4.TabIndex = 45;
-            this.button4.Text = "Find";
+            this.button4.Text = "Tìm Kiếm";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -128,7 +128,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(136, 61);
             this.button3.TabIndex = 44;
-            this.button3.Text = "Return Book";
+            this.button3.Text = "Trả Sách";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -144,11 +144,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 227);
+            this.label3.Location = new System.Drawing.Point(18, 227);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 19);
             this.label3.TabIndex = 42;
-            this.label3.Text = "Search borow-card ID";
+            this.label3.Text = "Tìm kiếm phiếu mượn";
             // 
             // label2
             // 
@@ -208,7 +208,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(136, 59);
             this.button2.TabIndex = 37;
-            this.button2.Text = "Exit";
+            this.button2.Text = "Thoát";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -221,7 +221,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 59);
             this.button1.TabIndex = 34;
-            this.button1.Text = "Update";
+            this.button1.Text = "Sửa";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -278,32 +278,32 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "MaPM";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Borrow-card ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã Phiếu Mượn";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "MaSach";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Book ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Mã Sách";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "TaiKhoan";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Account";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Tài Khoản";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             // 
             // Column7
             // 
             this.Column7.DataPropertyName = "NgayTra";
-            this.Column7.HeaderText = "Term return ";
+            this.Column7.HeaderText = "Ngày Trả Sách";
             this.Column7.Name = "Column7";
             // 
             // Column1
             // 
             this.Column1.DataPropertyName = "PhatQuaHan";
-            this.Column1.HeaderText = "Fine";
+            this.Column1.HeaderText = "Phạt Quá Hạn";
             this.Column1.Name = "Column1";
             // 
             // pnmaphieu
@@ -333,7 +333,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(33, 117);
+            this.label9.Location = new System.Drawing.Point(18, 118);
             this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 19);
@@ -345,7 +345,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(33, 71);
+            this.label10.Location = new System.Drawing.Point(18, 71);
             this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(116, 19);
@@ -363,7 +363,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PhieuTra";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Text = "Trả sách";
+            this.Text = "Tra Sach";
             this.Load += new System.EventHandler(this.Form7_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -394,11 +394,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.Label label4;
     }
 }

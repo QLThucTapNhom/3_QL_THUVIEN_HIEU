@@ -87,7 +87,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 56);
             this.button2.TabIndex = 27;
-            this.button2.Text = "Exit";
+            this.button2.Text = "Thoát";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -108,14 +108,14 @@
             // Column1
             // 
             this.Column1.DataPropertyName = "MaTL";
-            this.Column1.HeaderText = "Category ID";
+            this.Column1.HeaderText = "Mã Loại";
             this.Column1.Name = "Column1";
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // dgvpn1madg
             // 
             this.dgvpn1madg.DataPropertyName = "TenTL";
-            this.dgvpn1madg.HeaderText = "Name";
+            this.dgvpn1madg.HeaderText = "Tên Loại";
             this.dgvpn1madg.Name = "dgvpn1madg";
             // 
             // bttqlnvxoa
@@ -126,7 +126,7 @@
             this.bttqlnvxoa.Name = "bttqlnvxoa";
             this.bttqlnvxoa.Size = new System.Drawing.Size(134, 55);
             this.bttqlnvxoa.TabIndex = 26;
-            this.bttqlnvxoa.Text = "Delete";
+            this.bttqlnvxoa.Text = "Xóa";
             this.bttqlnvxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bttqlnvxoa.UseVisualStyleBackColor = false;
             this.bttqlnvxoa.Click += new System.EventHandler(this.bttqlnvxoa_Click);
@@ -139,7 +139,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 62);
             this.button1.TabIndex = 24;
-            this.button1.Text = "Edit";
+            this.button1.Text = "Sửa";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -152,7 +152,7 @@
             this.bttthemmoi.Name = "bttthemmoi";
             this.bttthemmoi.Size = new System.Drawing.Size(133, 56);
             this.bttthemmoi.TabIndex = 23;
-            this.bttthemmoi.Text = "Add";
+            this.bttthemmoi.Text = "Thêm";
             this.bttthemmoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.bttthemmoi.UseVisualStyleBackColor = false;
             this.bttthemmoi.Click += new System.EventHandler(this.bttthemmoi_Click);
@@ -164,9 +164,9 @@
             this.label2.Location = new System.Drawing.Point(224, 98);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 19);
+            this.label2.Size = new System.Drawing.Size(90, 19);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.label2.Text = "Tên Thể Loại";
             // 
             // label1
             // 
@@ -175,9 +175,9 @@
             this.label1.Location = new System.Drawing.Point(224, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 19);
+            this.label1.Size = new System.Drawing.Size(88, 19);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Category ID";
+            this.label1.Text = "Mã Thể Loại";
             // 
             // Category
             // 
@@ -189,7 +189,7 @@
             this.ClientSize = new System.Drawing.Size(558, 458);
             this.Controls.Add(this.panel1);
             this.Name = "Category";
-            this.Text = "Category";
+            this.Text = "The Loai Sach";
             this.Load += new System.EventHandler(this.Form9_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

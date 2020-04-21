@@ -89,7 +89,7 @@ namespace QL_THUVIEN2
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to logout?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn muốn đăng xuất không?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 paneldangnhap.Hide();
                 paneldsnv.Visible = false;
@@ -98,8 +98,9 @@ namespace QL_THUVIEN2
                 panelbaocao.Enabled = false;
                 panelqlnhanvien.Enabled = false;
                 bttdangnhap.Enabled = true;
-                MessageBox.Show("Logout successfully!");
-                    } 
+                MessageBox.Show("Bạn đã đăng xuất!");
+                lbThongBao.Show();
+            } 
             //panel6.Visible=true;
         }
 
@@ -144,6 +145,7 @@ namespace QL_THUVIEN2
      
         private void button22_Click(object sender, EventArgs e)
         {
+            
             cls.KetNoi();
             tendn = txtdntaikhoan.Text;
             matkhau = txtdnmatkhau.Text;
@@ -152,13 +154,13 @@ namespace QL_THUVIEN2
                 object Q = cls.layGiaTri("select Quyenhan from NHANVIEN where TaiKhoan = '" + tendn + "' and MatKhau = '" + matkhau + "'");
                 if (Q == null)
                 {
-                    MessageBox.Show("Account is incorrect!");
+                    MessageBox.Show("Tài khoản mật khẩu không đúng!","",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                     txtdntaikhoan.Clear();
                     txtdnmatkhau.Clear();
                 }
                 else
                 {
-                    MessageBox.Show("Login successfully!");
+                    MessageBox.Show("Đăng nhập thành công!","",MessageBoxButtons.OK);
                     quyen = Convert.ToString(Q);
                     if (quyen == "admin")
                     {
@@ -200,6 +202,7 @@ namespace QL_THUVIEN2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            lbThongBao.Hide();
             txtdnmatkhau.Clear();
             txtdntaikhoan.Clear();
             paneldangnhap.Visible = true;

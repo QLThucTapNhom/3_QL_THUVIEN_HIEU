@@ -31,15 +31,15 @@ namespace QL_THUVIEN2
         private void button1_Click(object sender, EventArgs e)
         {
 
-         if (label8.Text == "Book ID")
+         if (label8.Text == "Mã Sách")
                 cls.LoadData2DataGridView(dataGridView1, "select*from Sach where masach like'%" + textBox1.Text + "%'");
-            else if (label8.Text == "Name") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where tensach like'%" + textBox1.Text + "%'");
-            else if (label8.Text == "Publisher ID") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where manxb like'%" + textBox1.Text + "%'");
-            else if (label8.Text == "Category ID") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where matl like'%" + textBox1.Text + "%'");
-            else if (label8.Text == "Quantity") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where soluong like'%" + textBox1.Text + "%'");
-            else if (label8.Text == "Page Number") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where sotrang like'%" + textBox1.Text + "%'");
-            else if (label8.Text == "Number of broken book") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where sosachhong like'%" + textBox1.Text + "%'");
-            else if (label8.Text == "Price") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where gia like'%" + textBox1.Text + "%'");
+            else if (label8.Text == "Tên Sách") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where tensach like'%" + textBox1.Text + "%'");
+            else if (label8.Text == "Mã NXB") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where manxb like'%" + textBox1.Text + "%'");
+            else if (label8.Text == "Mã Thể Loại") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where matl like'%" + textBox1.Text + "%'");
+            else if (label8.Text == "Số Lượng") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where soluong like'%" + textBox1.Text + "%'");
+            else if (label8.Text == "Số Trang") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where sotrang like'%" + textBox1.Text + "%'");
+            else if (label8.Text == "SL Sách Hỏng") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where sosachhong like'%" + textBox1.Text + "%'");
+            else if (label8.Text == "Giá Sách") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where gia like'%" + textBox1.Text + "%'");
         }
 
         private void button2_Click(object sender, EventArgs e)

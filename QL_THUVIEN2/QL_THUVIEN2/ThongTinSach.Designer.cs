@@ -47,6 +47,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.bttttcnluu = new System.Windows.Forms.Button();
             this.dgvsach = new System.Windows.Forms.DataGridView();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtttcnten = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,11 +60,6 @@
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoSachHong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtttcnten = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.paneldg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvsach)).BeginInit();
             this.SuspendLayout();
@@ -282,54 +282,6 @@
             this.dgvsach.TabIndex = 3;
             this.dgvsach.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvsach_RowEnter);
             // 
-            // MaSach
-            // 
-            this.MaSach.DataPropertyName = "MaSach";
-            this.MaSach.HeaderText = "Book ID";
-            this.MaSach.Name = "MaSach";
-            // 
-            // TenSach
-            // 
-            this.TenSach.DataPropertyName = "TenSach";
-            this.TenSach.HeaderText = "Name";
-            this.TenSach.Name = "TenSach";
-            // 
-            // Gia
-            // 
-            this.Gia.DataPropertyName = "Gia";
-            this.Gia.HeaderText = "Price";
-            this.Gia.Name = "Gia";
-            // 
-            // dgvmanxb
-            // 
-            this.dgvmanxb.DataPropertyName = "MaNXB";
-            this.dgvmanxb.HeaderText = "Publisher";
-            this.dgvmanxb.Name = "dgvmanxb";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "MaTL";
-            this.Column1.HeaderText = "Category ID";
-            this.Column1.Name = "Column1";
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.DataPropertyName = "SoLuong";
-            this.SoLuong.HeaderText = "Quantity";
-            this.SoLuong.Name = "SoLuong";
-            // 
-            // SoTrang
-            // 
-            this.SoTrang.DataPropertyName = "SoTrang";
-            this.SoTrang.HeaderText = "Page number";
-            this.SoTrang.Name = "SoTrang";
-            // 
-            // SoSachHong
-            // 
-            this.SoSachHong.DataPropertyName = "SoSachHong";
-            this.SoSachHong.HeaderText = "Broken book number";
-            this.SoSachHong.Name = "SoSachHong";
-            // 
             // label19
             // 
             this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -390,6 +342,54 @@
             this.label11.Size = new System.Drawing.Size(67, 19);
             this.label11.TabIndex = 0;
             this.label11.Text = "Mã sách";
+            // 
+            // MaSach
+            // 
+            this.MaSach.DataPropertyName = "MaSach";
+            this.MaSach.HeaderText = "Mã Sách";
+            this.MaSach.Name = "MaSach";
+            // 
+            // TenSach
+            // 
+            this.TenSach.DataPropertyName = "TenSach";
+            this.TenSach.HeaderText = "Tên Sách";
+            this.TenSach.Name = "TenSach";
+            // 
+            // Gia
+            // 
+            this.Gia.DataPropertyName = "Gia";
+            this.Gia.HeaderText = "Đơn Giá";
+            this.Gia.Name = "Gia";
+            // 
+            // dgvmanxb
+            // 
+            this.dgvmanxb.DataPropertyName = "MaNXB";
+            this.dgvmanxb.HeaderText = "Mã NXB";
+            this.dgvmanxb.Name = "dgvmanxb";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaTL";
+            this.Column1.HeaderText = "Mã Loại";
+            this.Column1.Name = "Column1";
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.Name = "SoLuong";
+            // 
+            // SoTrang
+            // 
+            this.SoTrang.DataPropertyName = "SoTrang";
+            this.SoTrang.HeaderText = "Số Trang";
+            this.SoTrang.Name = "SoTrang";
+            // 
+            // SoSachHong
+            // 
+            this.SoSachHong.DataPropertyName = "SoSachHong";
+            this.SoSachHong.HeaderText = "SL Sách Hỏng";
+            this.SoSachHong.Name = "SoSachHong";
             // 
             // ThongTinSach
             // 

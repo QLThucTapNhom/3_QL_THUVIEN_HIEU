@@ -75,6 +75,12 @@
             this.bttqlnvxoa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvnvdanhsach = new System.Windows.Forms.DataGridView();
+            this.dgvdsnvma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvdsnvten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvdsnvgioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvdsnvdiachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvdsnvsdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvdsnvngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ttcnsdt = new System.Windows.Forms.TextBox();
             this.ttcndiachi = new System.Windows.Forms.TextBox();
             this.ttcnten = new System.Windows.Forms.TextBox();
@@ -87,12 +93,7 @@
             this.txtttcnten = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dgvdsnvma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvdsnvten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvdsnvgioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvdsnvdiachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvdsnvsdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvdsnvngaysinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbThongBao = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tphome.SuspendLayout();
             this.paneldangnhap.SuspendLayout();
@@ -130,6 +131,7 @@
             // tphome
             // 
             this.tphome.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tphome.Controls.Add(this.lbThongBao);
             this.tphome.Controls.Add(this.paneldangnhap);
             this.tphome.Controls.Add(this.panel1);
             this.tphome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -138,7 +140,7 @@
             this.tphome.Padding = new System.Windows.Forms.Padding(3);
             this.tphome.Size = new System.Drawing.Size(1176, 113);
             this.tphome.TabIndex = 0;
-            this.tphome.Text = "Home";
+            this.tphome.Text = "Trang Chủ";
             // 
             // paneldangnhap
             // 
@@ -252,7 +254,7 @@
             this.button3.BackColor = System.Drawing.Color.LightCoral;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(250, 2);
+            this.button3.Location = new System.Drawing.Point(250, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 74);
             this.button3.TabIndex = 2;
@@ -299,7 +301,7 @@
             this.tpquanly.Padding = new System.Windows.Forms.Padding(3);
             this.tpquanly.Size = new System.Drawing.Size(1176, 113);
             this.tpquanly.TabIndex = 1;
-            this.tpquanly.Text = "Management";
+            this.tpquanly.Text = "Quản Lý";
             this.tpquanly.UseVisualStyleBackColor = true;
             // 
             // panelqlsach
@@ -467,13 +469,13 @@
             // 
             // tpmuontra
             // 
+            this.tpmuontra.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tpmuontra.Controls.Add(this.panelqlphieu);
             this.tpmuontra.Location = new System.Drawing.Point(4, 24);
             this.tpmuontra.Name = "tpmuontra";
             this.tpmuontra.Size = new System.Drawing.Size(1176, 113);
             this.tpmuontra.TabIndex = 2;
-            this.tpmuontra.Text = "Borrow- return book";
-            this.tpmuontra.UseVisualStyleBackColor = true;
+            this.tpmuontra.Text = "Mượn - Trả Sách";
             // 
             // panelqlphieu
             // 
@@ -525,13 +527,13 @@
             // 
             // tpbaocao
             // 
+            this.tpbaocao.BackColor = System.Drawing.Color.LightSteelBlue;
             this.tpbaocao.Controls.Add(this.panelbaocao);
             this.tpbaocao.Location = new System.Drawing.Point(4, 24);
             this.tpbaocao.Name = "tpbaocao";
             this.tpbaocao.Size = new System.Drawing.Size(1176, 113);
             this.tpbaocao.TabIndex = 3;
-            this.tpbaocao.Text = "Search";
-            this.tpbaocao.UseVisualStyleBackColor = true;
+            this.tpbaocao.Text = "Tìm Kiếm";
             // 
             // panelbaocao
             // 
@@ -698,6 +700,42 @@
             this.dgvnvdanhsach.TabIndex = 3;
             this.dgvnvdanhsach.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgvnvdanhsach_CellClick);
             // 
+            // dgvdsnvma
+            // 
+            this.dgvdsnvma.DataPropertyName = "TaiKhoan";
+            this.dgvdsnvma.HeaderText = "Tài Khoản";
+            this.dgvdsnvma.Name = "dgvdsnvma";
+            // 
+            // dgvdsnvten
+            // 
+            this.dgvdsnvten.DataPropertyName = "TenNV";
+            this.dgvdsnvten.HeaderText = "Họ Tên";
+            this.dgvdsnvten.Name = "dgvdsnvten";
+            // 
+            // dgvdsnvgioitinh
+            // 
+            this.dgvdsnvgioitinh.DataPropertyName = "GioiTinh";
+            this.dgvdsnvgioitinh.HeaderText = "Giới Tính";
+            this.dgvdsnvgioitinh.Name = "dgvdsnvgioitinh";
+            // 
+            // dgvdsnvdiachi
+            // 
+            this.dgvdsnvdiachi.DataPropertyName = "DiaChi";
+            this.dgvdsnvdiachi.HeaderText = "Địa Chỉ";
+            this.dgvdsnvdiachi.Name = "dgvdsnvdiachi";
+            // 
+            // dgvdsnvsdt
+            // 
+            this.dgvdsnvsdt.DataPropertyName = "SDT_EMAIL";
+            this.dgvdsnvsdt.HeaderText = "SĐT";
+            this.dgvdsnvsdt.Name = "dgvdsnvsdt";
+            // 
+            // dgvdsnvngaysinh
+            // 
+            this.dgvdsnvngaysinh.DataPropertyName = "NgaySinh";
+            this.dgvdsnvngaysinh.HeaderText = "Ngày Sinh";
+            this.dgvdsnvngaysinh.Name = "dgvdsnvngaysinh";
+            // 
             // ttcnsdt
             // 
             this.ttcnsdt.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -820,41 +858,16 @@
             this.panel3.Size = new System.Drawing.Size(1005, 521);
             this.panel3.TabIndex = 2;
             // 
-            // dgvdsnvma
+            // lbThongBao
             // 
-            this.dgvdsnvma.DataPropertyName = "TaiKhoan";
-            this.dgvdsnvma.HeaderText = "Account";
-            this.dgvdsnvma.Name = "dgvdsnvma";
-            // 
-            // dgvdsnvten
-            // 
-            this.dgvdsnvten.DataPropertyName = "TenNV";
-            this.dgvdsnvten.HeaderText = "Name";
-            this.dgvdsnvten.Name = "dgvdsnvten";
-            // 
-            // dgvdsnvgioitinh
-            // 
-            this.dgvdsnvgioitinh.DataPropertyName = "GioiTinh";
-            this.dgvdsnvgioitinh.HeaderText = "Gender";
-            this.dgvdsnvgioitinh.Name = "dgvdsnvgioitinh";
-            // 
-            // dgvdsnvdiachi
-            // 
-            this.dgvdsnvdiachi.DataPropertyName = "DiaChi";
-            this.dgvdsnvdiachi.HeaderText = "Address";
-            this.dgvdsnvdiachi.Name = "dgvdsnvdiachi";
-            // 
-            // dgvdsnvsdt
-            // 
-            this.dgvdsnvsdt.DataPropertyName = "SDT_EMAIL";
-            this.dgvdsnvsdt.HeaderText = "Phone number";
-            this.dgvdsnvsdt.Name = "dgvdsnvsdt";
-            // 
-            // dgvdsnvngaysinh
-            // 
-            this.dgvdsnvngaysinh.DataPropertyName = "NgaySinh";
-            this.dgvdsnvngaysinh.HeaderText = "Date of birth";
-            this.dgvdsnvngaysinh.Name = "dgvdsnvngaysinh";
+            this.lbThongBao.AutoSize = true;
+            this.lbThongBao.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lbThongBao.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbThongBao.Location = new System.Drawing.Point(441, 38);
+            this.lbThongBao.Name = "lbThongBao";
+            this.lbThongBao.Size = new System.Drawing.Size(583, 32);
+            this.lbThongBao.TabIndex = 6;
+            this.lbThongBao.Text = "Bạn cần đăng nhập để sử dụng các chức năng!";
             // 
             // Form1
             // 
@@ -868,10 +881,11 @@
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "LIBRARY MANAGEMENT";
+            this.Text = "Quan Ly Thu Vien";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tphome.ResumeLayout(false);
+            this.tphome.PerformLayout();
             this.paneldangnhap.ResumeLayout(false);
             this.paneldangnhap.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -904,7 +918,6 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button bttdangnhap;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panelqlnhanvien;
         private System.Windows.Forms.Label label3;
@@ -959,6 +972,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvdsnvdiachi;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvdsnvsdt;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvdsnvngaysinh;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbThongBao;
     }
 }
 

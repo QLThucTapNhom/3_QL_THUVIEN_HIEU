@@ -47,18 +47,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvpn1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvpn1madg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn2mapm = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvpn2 = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -88,6 +80,14 @@
             this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvpn1madg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvpn1)).BeginInit();
@@ -133,7 +133,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(79, 26);
             this.button7.TabIndex = 12;
-            this.button7.Text = "Exit";
+            this.button7.Text = "Thoát";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -151,7 +151,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(107, 26);
             this.button6.TabIndex = 10;
-            this.button6.Text = "Find";
+            this.button6.Text = "Tìm Kiếm";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -201,7 +201,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 56);
             this.button2.TabIndex = 27;
-            this.button2.Text = "Exit";
+            this.button2.Text = "Thoát";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -332,31 +332,6 @@
             this.dgvpn1.TabIndex = 8;
             this.dgvpn1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpn1_RowEnter);
             // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "MaPM";
-            this.Column1.HeaderText = "Borrow-card ID";
-            this.Column1.Name = "Column1";
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // dgvpn1madg
-            // 
-            this.dgvpn1madg.DataPropertyName = "MaDG";
-            this.dgvpn1madg.HeaderText = "Reader ID";
-            this.dgvpn1madg.Name = "dgvpn1madg";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "TaiKhoan";
-            this.Column3.HeaderText = "Account";
-            this.Column3.Name = "Column3";
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "NgayMuon";
-            this.Column9.HeaderText = "Borrow Date";
-            this.Column9.Name = "Column9";
-            // 
             // pn2mapm
             // 
             this.pn2mapm.Location = new System.Drawing.Point(392, 47);
@@ -402,30 +377,6 @@
             this.dgvpn2.Size = new System.Drawing.Size(611, 189);
             this.dgvpn2.TabIndex = 10;
             this.dgvpn2.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpn2_RowEnter);
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "MaPM";
-            this.Column4.HeaderText = "Borrow-card ID";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "MaSach";
-            this.Column5.HeaderText = "Book ID";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "HanTra";
-            this.Column6.HeaderText = "Return term";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "SoLuongSM";
-            this.Column7.HeaderText = "Borrow-book amount";
-            this.Column7.Name = "Column7";
             // 
             // groupBox2
             // 
@@ -479,9 +430,9 @@
             // 
             // txtsdsachmuon
             // 
-            this.txtsdsachmuon.Location = new System.Drawing.Point(464, 141);
+            this.txtsdsachmuon.Location = new System.Drawing.Point(392, 141);
             this.txtsdsachmuon.Name = "txtsdsachmuon";
-            this.txtsdsachmuon.Size = new System.Drawing.Size(46, 26);
+            this.txtsdsachmuon.Size = new System.Drawing.Size(118, 26);
             this.txtsdsachmuon.TabIndex = 30;
             // 
             // label5
@@ -709,6 +660,55 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Information of book";
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaPM";
+            this.Column1.HeaderText = "Mã Phiếu Mượn";
+            this.Column1.Name = "Column1";
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dgvpn1madg
+            // 
+            this.dgvpn1madg.DataPropertyName = "MaDG";
+            this.dgvpn1madg.HeaderText = "Mã Đọc Giả";
+            this.dgvpn1madg.Name = "dgvpn1madg";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "TaiKhoan";
+            this.Column3.HeaderText = "Tài Khoản";
+            this.Column3.Name = "Column3";
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "NgayMuon";
+            this.Column9.HeaderText = "Ngày Mượn";
+            this.Column9.Name = "Column9";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "MaPM";
+            this.Column4.HeaderText = "Mã Phiếu mượn";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "MaSach";
+            this.Column5.HeaderText = "Mã Sách";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "HanTra";
+            this.Column6.HeaderText = "Hạn Trả";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "SoLuongSM";
+            this.Column7.HeaderText = "Số Lượng Mượn";
+            this.Column7.Name = "Column7";
+            // 
             // QuanLymuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -723,7 +723,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QuanLymuon";
-            this.Text = "BORROW MANAGEMENT";
+            this.Text = "Quan Ly Muon Sach";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -784,14 +784,6 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvpn1madg;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
@@ -805,5 +797,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvpn1madg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

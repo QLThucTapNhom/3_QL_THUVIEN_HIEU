@@ -48,9 +48,9 @@
             this.checkBox1.Location = new System.Drawing.Point(179, 254);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(130, 23);
+            this.checkBox1.Size = new System.Drawing.Size(56, 23);
             this.checkBox1.TabIndex = 31;
-            this.checkBox1.Text = "Show PassWord";
+            this.checkBox1.Text = "Hiện";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -63,10 +63,9 @@
             this.button2.Location = new System.Drawing.Point(307, 304);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 73);
+            this.button2.Size = new System.Drawing.Size(82, 73);
             this.button2.TabIndex = 30;
-            this.button2.Text = "Exit";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -147,9 +146,9 @@
             this.label1.Location = new System.Drawing.Point(175, 51);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 24);
+            this.label1.Size = new System.Drawing.Size(232, 24);
             this.label1.TabIndex = 22;
-            this.label1.Text = "CREATE ACCOUNT";
+            this.label1.Text = "ĐĂNG KÝ TÀI KHOẢN";
             // 
             // button3
             // 
@@ -161,8 +160,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(82, 73);
             this.button3.TabIndex = 32;
-            this.button3.Text = "Save";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button3.Text = "Đăng Ký";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -186,7 +184,7 @@
             this.ForeColor = System.Drawing.Color.DarkGreen;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTaoTaiKhoan";
-            this.Text = "Create account";
+            this.Text = "Dang Ky Tai Khoan";
             this.Load += new System.EventHandler(this.FormTaoTaiKhoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
