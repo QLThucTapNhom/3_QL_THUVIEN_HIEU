@@ -11,7 +11,7 @@ namespace QL_THUVIEN2
 {
     class clsDatabase
     {
-        string strConnect = @"Data Source=ADMIN;Initial Catalog=TTN_QLTV;Integrated Security=True";
+        string strConnect = @"Data Source=WIN10PRO\SQLEXPRESS;Initial Catalog=TTN_QLTV;Integrated Security=True";
         SqlConnection sqlCon;
         SqlCommand sqlCom;
     //    SqlDataReader sqlRea;

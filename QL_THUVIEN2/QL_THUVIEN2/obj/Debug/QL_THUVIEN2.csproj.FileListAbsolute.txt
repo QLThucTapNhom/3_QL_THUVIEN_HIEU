@@ -113,3 +113,24 @@ D:\HDD\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.csproj.Ge
 D:\HDD\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.csproj.CoreCompileInputs.cache
 D:\HDD\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.exe
 D:\HDD\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.pdb
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\bin\Debug\QL_THUVIEN2.exe.config
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\bin\Debug\QL_THUVIEN2.exe
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\bin\Debug\QL_THUVIEN2.pdb
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.csprojAssemblyReference.cache
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.Category.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.Form1.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.FormTaoTaiKhoan.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.PhieuTra.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.Properties.Resources.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.QuanLymuon.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.Reader.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.Rules.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.thongtincanhan.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.ThongTinSach.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.TimKiemSach.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.TTNXB.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.TTTaiKhoan.resources
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.csproj.GenerateResource.cache
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.csproj.CoreCompileInputs.cache
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.exe
+D:\Hoc ky 6\tt nhóm\Nhom\3_QL_THUVIEN_HIEU\QL_THUVIEN2\QL_THUVIEN2\obj\Debug\QL_THUVIEN2.pdb

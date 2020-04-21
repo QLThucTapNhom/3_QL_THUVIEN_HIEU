@@ -221,7 +221,7 @@
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox3.Location = new System.Drawing.Point(537, 89);
+            this.groupBox3.Location = new System.Drawing.Point(535, 101);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(149, 124);
             this.groupBox3.TabIndex = 32;
