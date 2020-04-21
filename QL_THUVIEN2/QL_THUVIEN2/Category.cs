@@ -22,8 +22,7 @@ namespace QL_THUVIEN2
         private void Form9_Load(object sender, EventArgs e)
         {
             ma.Enabled = false;
-            //  ketnoi();
-            // HienThi();
+            
             cls.KetNoi();
             cls.LoadData2DataGridView(dgv, "select *from THELOAI");
         }
@@ -45,28 +44,25 @@ namespace QL_THUVIEN2
             if (bttthemmoi.Text=="OK")
             {
                 
-               //     string matl = "select COUNT(matl) from theloai WHERE matl='" + ma.Text + "'";
-                    //  SqlCommand sl = new SqlCommand(matl, cnn);
-                    //  cls.ThucThiSQLTheoKetNoi(mapm);
+              
                     int slg = cls.CheckID("select COUNT(matl) from theloai WHERE matl='" + ma.Text + "'");
                         //(int)sl.ExecuteScalar();
-                    if (slg > 0) MessageBox.Show("Category ID already exists!");
+                    if (slg > 0) MessageBox.Show("Mã thể loại đã tồn tại!");
                     else if(ma.Text=="")
                 {
-                    MessageBox.Show("Category ID is empty!");
+                    MessageBox.Show("Mã thể loại trống!");
                 }
                     else if(ten.Text=="")
                 {
-                    MessageBox.Show("Category's name is empty!");
+                    MessageBox.Show("Tên Thể loại trống!");
                 }
                     
                     else
                     {
                         string sql = "insert into THELOAI values('" + ma.Text + "',N'" + ten.Text + "')";
-                        //  SqlCommand cmd = new SqlCommand(sql, cnn);
-                        //  cmd.ExecuteNonQuery();
+                       
                         cls.ThucThiSQLTheoKetNoi(sql);
-                        MessageBox.Show("Add category successfully!");
+                        MessageBox.Show("Thêm thành công!");
                         //   HienThi();
                         cls.LoadData2DataGridView(dgv, "select *from THELOAI");
                     }
@@ -89,10 +85,10 @@ namespace QL_THUVIEN2
         {
             if (MessageBox.Show("Do you want to delete?(Y/N)", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                string cmd = "delete from THELOAI where MaTL='" + ma.Text + "'";
+                string cmd = "EXEC DEL_Theloai @matl = '" + ma.Text + "'";
                 cls.ThucThiSQLTheoKetNoi(cmd);
                 //   cmd.ExecuteNonQuery();
-                MessageBox.Show("Delete category successfully!");
+                MessageBox.Show("Xóa Thành công!");
             }
             //  HienThi();
             cls.LoadData2DataGridView(dgv, "select *from THELOAI");

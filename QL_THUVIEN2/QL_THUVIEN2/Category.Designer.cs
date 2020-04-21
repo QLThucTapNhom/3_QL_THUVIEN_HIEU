@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel1.Controls.Add(this.ten);
             this.panel1.Controls.Add(this.ma);
             this.panel1.Controls.Add(this.button2);
@@ -82,14 +82,14 @@
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-           // this.button2.Image = global::QL_THUVIEN2.Properties.Resources.rewind1;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button2.Location = new System.Drawing.Point(420, 150);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 56);
             this.button2.TabIndex = 27;
             this.button2.Text = "Exit";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dgv
@@ -121,40 +121,40 @@
             // bttqlnvxoa
             // 
             this.bttqlnvxoa.Anchor = System.Windows.Forms.AnchorStyles.Right;
-      //      this.bttqlnvxoa.Image = global::QL_THUVIEN2.Properties.Resources.window_remove;
+            this.bttqlnvxoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.bttqlnvxoa.Location = new System.Drawing.Point(28, 165);
             this.bttqlnvxoa.Name = "bttqlnvxoa";
             this.bttqlnvxoa.Size = new System.Drawing.Size(134, 55);
             this.bttqlnvxoa.TabIndex = 26;
             this.bttqlnvxoa.Text = "Delete";
             this.bttqlnvxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bttqlnvxoa.UseVisualStyleBackColor = true;
+            this.bttqlnvxoa.UseVisualStyleBackColor = false;
             this.bttqlnvxoa.Click += new System.EventHandler(this.bttqlnvxoa_Click);
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-         //   this.button1.Image = global::QL_THUVIEN2.Properties.Resources.window_edit;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.Location = new System.Drawing.Point(28, 94);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 62);
             this.button1.TabIndex = 24;
             this.button1.Text = "Edit";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // bttthemmoi
             // 
             this.bttthemmoi.Anchor = System.Windows.Forms.AnchorStyles.Right;
-         //   this.bttthemmoi.Image = global::QL_THUVIEN2.Properties.Resources.window_add;
+            this.bttthemmoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.bttthemmoi.Location = new System.Drawing.Point(29, 25);
             this.bttthemmoi.Name = "bttthemmoi";
             this.bttthemmoi.Size = new System.Drawing.Size(133, 56);
             this.bttthemmoi.TabIndex = 23;
             this.bttthemmoi.Text = "Add";
             this.bttthemmoi.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bttthemmoi.UseVisualStyleBackColor = true;
+            this.bttthemmoi.UseVisualStyleBackColor = false;
             this.bttthemmoi.Click += new System.EventHandler(this.bttthemmoi_Click);
             // 
             // label2
@@ -183,6 +183,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(558, 458);

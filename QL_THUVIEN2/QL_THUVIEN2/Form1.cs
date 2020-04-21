@@ -35,7 +35,6 @@ namespace QL_THUVIEN2
             panelbaocao.Enabled = false;
             //     panelqldocgia.Enabled = false;
             panelqlsach.Enabled = false;
-
             cls.KetNoi();
             ttcnma.Enabled = false;
            

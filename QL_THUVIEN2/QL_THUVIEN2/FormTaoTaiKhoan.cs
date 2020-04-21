@@ -33,8 +33,6 @@ namespace QL_THUVIEN2
         {
        
             string mapm = "select COUNT(TaiKhoan) from NHANVIEN WHERE TaiKhoan='" + textBox1.Text + "'";
-      //      SqlCommand sl = new SqlCommand(mapm, cnn);
-            //  cls.ThucThiSQLTheoKetNoi(mapm);
             int slg = cls.CheckID(mapm);
                 //(int)sl.ExecuteScalar();
             if (slg > 0) MessageBox.Show("Account already exists!");
@@ -59,7 +57,7 @@ namespace QL_THUVIEN2
                 //  cmd.ExecuteNonQuery();
                 cls.ThucThiSQLTheoKetNoi(sql);
              //   cls.ThucThiSQLTheoKetNoi(sql);
-                MessageBox.Show("Create account successfully,please update information of account!");
+                MessageBox.Show("Đăng kí thàn công!Hãy cập nhật thông tin trong phần thông tin cá nhân");
             }
         }
 

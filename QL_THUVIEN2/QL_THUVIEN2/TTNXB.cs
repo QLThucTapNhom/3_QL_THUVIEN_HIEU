@@ -36,7 +36,7 @@ namespace QL_THUVIEN2
        }
         private void delete()
         {
-            string sql = "delete from NXB where MaNXB='" + txtma.Text + "'";
+            string sql = "EXEC DEL_NXB @manxb = '" + txtma.Text + "'";
             //   SqlCommand cmd = new SqlCommand(sql, cnn);
             // cmd.ExecuteNonQuery();
             cls.ThucThiSQLTheoKetNoi(sql);
