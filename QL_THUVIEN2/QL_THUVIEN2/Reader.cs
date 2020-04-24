@@ -186,5 +186,15 @@ namespace QL_THUVIEN2
             txtns.Value = dt;
             cls.LoadData2DataGridView(dgvchitiet, "EXEC DSSachmuon @MaDocGia='" + txtma.Text + "'");
         }
+
+        private void dgvds_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvchitiet_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

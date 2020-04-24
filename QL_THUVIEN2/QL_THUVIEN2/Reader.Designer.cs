@@ -104,6 +104,7 @@
             this.dgvds.Size = new System.Drawing.Size(673, 247);
             this.dgvds.TabIndex = 29;
             this.dgvds.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgvds_CellClick);
+            this.dgvds.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvds_CellContentClick);
             // 
             // groupBox1
             // 
@@ -123,6 +124,7 @@
             this.dgvchitiet.Name = "dgvchitiet";
             this.dgvchitiet.Size = new System.Drawing.Size(225, 247);
             this.dgvchitiet.TabIndex = 0;
+            this.dgvchitiet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvchitiet_CellContentClick);
             // 
             // button2
             // 

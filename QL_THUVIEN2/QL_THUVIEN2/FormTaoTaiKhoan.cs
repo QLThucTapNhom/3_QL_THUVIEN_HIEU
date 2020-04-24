@@ -35,7 +35,7 @@ namespace QL_THUVIEN2
             string mapm = "select COUNT(TaiKhoan) from NHANVIEN WHERE TaiKhoan='" + textBox1.Text + "'";
             int slg = cls.CheckID(mapm);
                 //(int)sl.ExecuteScalar();
-            if (slg > 0) MessageBox.Show("Account already exists!");
+            if (slg > 0) MessageBox.Show("Tài Khoản đã tồn tại!");
             else
             if (textBox1.Text.Length - 1 < 5)
                 MessageBox.Show(" Username is too short!");
