@@ -17,7 +17,7 @@ namespace QL_THUVIEN2
         {
             InitializeComponent();
         }
-        clsDatabase cls = new QL_THUVIEN2.clsDatabase();
+        clsDatabase dt = new QL_THUVIEN2.clsDatabase();
         //private void ketnoi()
         //{
         //    string ketnoi = @"Data Source=LAPTOP88-PC\SQLEXPRESS;Initial Catalog=DA_QLTV;Integrated Security=True";
@@ -28,12 +28,12 @@ namespace QL_THUVIEN2
         private void HienThi()
         {
            
-            cls.LoadData2DataGridView(dataGridView1, "select TaiKhoan, TenNV, GioiTinh, DiaChi, SDT_EMAIL, NgaySinh from NHANVIEN where TAIKHOAN = '" + Form1.tendn + "'");
+            dt.LoadData2DataGridView(dataGridView1, "select TaiKhoan, TenNV, GioiTinh, DiaChi, SDT_EMAIL, NgaySinh from NHANVIEN where TAIKHOAN = '" + Form1.tendn + "'");
         }
 
         private void thongtincanhan_Load(object sender, EventArgs e)
         {
-            cls.KetNoi();
+            dt.KetNoi();
            // ketnoi();
             HienThi();
         }
@@ -55,7 +55,7 @@ namespace QL_THUVIEN2
                 string s = txtns.Value.Year + "/" + txtns.Value.Month + "/" + txtns.Value.Day;
                 string cmd ="update NHANVIEN set TenNV=N'" + textBox1.Text + "',GioiTinh=N'" + txtGIOITINH.Text + "',DiaChi=N'" + txtDiaChi.Text + "',NgaySinh=N'" + s + "',SDT_EMAIL=N'" + txtSoDienThoai.Text  + "' where TAIKHOAN='" + Form1.tendn + "'";
                 //    cmd.ExecuteNonQuery();
-                cls.ThucThiSQLTheoKetNoi(cmd);
+                dt.ThucThiSQLTheoKetNoi(cmd);
                 HienThi();
                 MessageBox.Show("Edit staff successfully!");
             }

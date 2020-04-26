@@ -128,13 +128,10 @@ namespace QL_THUVIEN2
             else
             {
                 string cmd = "update SACH set SoLuong = SoLuong +(select soluongSm from ql_phieumuon where MaSach='" + pnmasach.Text + "' and Mapm='" + pnmaphieu.Text + "') from sach where MaSach='" + pnmasach.Text + "'";
-                //   cmd.ExecuteNonQuery();
                 cls.ThucThiSQLTheoKetNoi(cmd);
                 string cmd1 = "delete from QL_PHIEUMUON where MaPM='" + pnmaphieu.Text + "' and MaSach='" + pnmasach.Text + "'";
-                // cmd1.ExecuteNonQuery();
                 cls.ThucThiSQLTheoKetNoi(cmd1);
                 delete();
-                // HienThi();
                 MessageBox.Show("Book is returned!");
                 pnphat.Text = "";
                 pnmaphieu.Text = "";

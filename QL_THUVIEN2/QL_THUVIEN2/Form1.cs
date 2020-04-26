@@ -234,7 +234,7 @@ namespace QL_THUVIEN2
         {
 
             update();
-            MessageBox.Show("Edit staff successfully!");
+            MessageBox.Show("Chỉnh Sửa thành công!");
             HienThi();
         }
 
