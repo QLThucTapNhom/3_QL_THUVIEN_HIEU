@@ -36,27 +36,22 @@ namespace QL_THUVIEN2
             int slg = cls.CheckID(mapm);
                 //(int)sl.ExecuteScalar();
             if (slg > 0) MessageBox.Show("Tài Khoản đã tồn tại!");
-            else
-            if (textBox1.Text.Length - 1 < 5)
+            else if (textBox1.Text.Length - 1 < 5)
                 MessageBox.Show(" Username is too short!");
-            else
-                 if (textBox1.Text.Length - 1 > 30)
+            else if (textBox1.Text.Length - 1 > 30)
                 MessageBox.Show("Username is too long!");
-            else
-                 if (textBox2.Text.Length - 1 < 5)
+            else if (textBox2.Text.Length - 1 < 5)
                 MessageBox.Show("Password is too short!");
-            else
-                 if (textBox3.Text.Length - 1 > 30)
+            else if (textBox3.Text.Length - 1 > 30)
                 MessageBox.Show("Password is too long");
-            else
-                if (textBox2.Text != textBox3.Text)
+            else if (textBox2.Text != textBox3.Text)
                 MessageBox.Show("Password don't match!");
             else
-            { string sql="insert into NHANVIEN(TaiKhoan, MatKhau, Quyenhan)values('" + textBox1.Text + "', '" + textBox2.Text + "', 'user')";
+            { string sql="insert into NHANVIEN(TaiKhoan, MatKhau, Quyenhan) values('" + textBox1.Text + "', '" + textBox2.Text + "', 'user')";
                 // SqlCommand cmd = new SqlCommand(sql, cnn);
                 //  cmd.ExecuteNonQuery();
                 cls.ThucThiSQLTheoKetNoi(sql);
-             //   cls.ThucThiSQLTheoKetNoi(sql);
+                //cls.ThucThiSQLTheoKetNoi(sql);
                 MessageBox.Show("Đăng kí thàn công!Hãy cập nhật thông tin trong phần thông tin cá nhân");
             }
         }

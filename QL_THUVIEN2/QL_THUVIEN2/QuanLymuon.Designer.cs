@@ -47,10 +47,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvpn1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvpn1madg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn2mapm = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvpn2 = new System.Windows.Forms.DataGridView();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -65,12 +73,13 @@
             this.pn2hantra = new System.Windows.Forms.DateTimePicker();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,15 +88,6 @@
             this.Column18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvpn1madg = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvpn1)).BeginInit();
@@ -332,6 +332,31 @@
             this.dgvpn1.TabIndex = 8;
             this.dgvpn1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpn1_RowEnter);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaPM";
+            this.Column1.HeaderText = "Mã Phiếu Mượn";
+            this.Column1.Name = "Column1";
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dgvpn1madg
+            // 
+            this.dgvpn1madg.DataPropertyName = "MaDG";
+            this.dgvpn1madg.HeaderText = "Mã Đọc Giả";
+            this.dgvpn1madg.Name = "dgvpn1madg";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "TaiKhoan";
+            this.Column3.HeaderText = "Tài Khoản";
+            this.Column3.Name = "Column3";
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "NgayMuon";
+            this.Column9.HeaderText = "Ngày Mượn";
+            this.Column9.Name = "Column9";
+            // 
             // pn2mapm
             // 
             this.pn2mapm.Location = new System.Drawing.Point(392, 47);
@@ -377,6 +402,30 @@
             this.dgvpn2.Size = new System.Drawing.Size(611, 189);
             this.dgvpn2.TabIndex = 10;
             this.dgvpn2.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpn2_RowEnter);
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "MaPM";
+            this.Column4.HeaderText = "Mã Phiếu mượn";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "MaSach";
+            this.Column5.HeaderText = "Mã Sách";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "HanTra";
+            this.Column6.HeaderText = "Hạn Trả";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "SoLuongSM";
+            this.Column7.HeaderText = "Số Lượng Mượn";
+            this.Column7.Name = "Column7";
             // 
             // groupBox2
             // 
@@ -550,38 +599,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(528, 127);
             this.dataGridView1.TabIndex = 0;
             // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "MADG";
-            this.Column2.HeaderText = "Reader ID";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 80;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "TenDG";
-            this.Column8.HeaderText = "Name";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 160;
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "GioiTinh";
-            this.Column10.HeaderText = "Gender";
-            this.Column10.Name = "Column10";
-            // 
-            // Column11
-            // 
-            this.Column11.DataPropertyName = "DiaChi";
-            this.Column11.HeaderText = "Address";
-            this.Column11.Name = "Column11";
-            // 
-            // Column12
-            // 
-            this.Column12.DataPropertyName = "NgaySinh";
-            this.Column12.HeaderText = "Date of birth";
-            this.Column12.Name = "Column12";
-            // 
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -600,56 +617,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(617, 127);
             this.dataGridView2.TabIndex = 14;
             // 
-            // Column13
-            // 
-            this.Column13.DataPropertyName = "MaSach";
-            this.Column13.HeaderText = "Book ID";
-            this.Column13.Name = "Column13";
-            this.Column13.Width = 80;
-            // 
-            // Column14
-            // 
-            this.Column14.DataPropertyName = "TenSach";
-            this.Column14.HeaderText = "Name";
-            this.Column14.Name = "Column14";
-            this.Column14.Width = 120;
-            // 
-            // Column15
-            // 
-            this.Column15.DataPropertyName = "Gia";
-            this.Column15.HeaderText = "Price";
-            this.Column15.Name = "Column15";
-            // 
-            // Column16
-            // 
-            this.Column16.DataPropertyName = "MaNXB";
-            this.Column16.HeaderText = "Publisher";
-            this.Column16.Name = "Column16";
-            // 
-            // Column17
-            // 
-            this.Column17.DataPropertyName = "MaTL";
-            this.Column17.HeaderText = "Category ID";
-            this.Column17.Name = "Column17";
-            // 
-            // Column18
-            // 
-            this.Column18.DataPropertyName = "SoLuong";
-            this.Column18.HeaderText = "Quantity";
-            this.Column18.Name = "Column18";
-            // 
-            // Column19
-            // 
-            this.Column19.DataPropertyName = "SoTrang";
-            this.Column19.HeaderText = "Page Number";
-            this.Column19.Name = "Column19";
-            // 
-            // Column20
-            // 
-            this.Column20.DataPropertyName = "SoSachHong";
-            this.Column20.HeaderText = "Broken book";
-            this.Column20.Name = "Column20";
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.dataGridView2);
@@ -660,54 +627,87 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Information of book";
             // 
-            // Column1
+            // Column2
             // 
-            this.Column1.DataPropertyName = "MaPM";
-            this.Column1.HeaderText = "Mã Phiếu Mượn";
-            this.Column1.Name = "Column1";
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column2.DataPropertyName = "MADG";
+            this.Column2.HeaderText = "Mã ĐG";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 80;
             // 
-            // dgvpn1madg
+            // Column8
             // 
-            this.dgvpn1madg.DataPropertyName = "MaDG";
-            this.dgvpn1madg.HeaderText = "Mã Đọc Giả";
-            this.dgvpn1madg.Name = "dgvpn1madg";
+            this.Column8.DataPropertyName = "TenDG";
+            this.Column8.HeaderText = "Tên ĐG";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 160;
             // 
-            // Column3
+            // Column10
             // 
-            this.Column3.DataPropertyName = "TaiKhoan";
-            this.Column3.HeaderText = "Tài Khoản";
-            this.Column3.Name = "Column3";
+            this.Column10.DataPropertyName = "GioiTinh";
+            this.Column10.HeaderText = "Giới Tính";
+            this.Column10.Name = "Column10";
             // 
-            // Column9
+            // Column11
             // 
-            this.Column9.DataPropertyName = "NgayMuon";
-            this.Column9.HeaderText = "Ngày Mượn";
-            this.Column9.Name = "Column9";
+            this.Column11.DataPropertyName = "DiaChi";
+            this.Column11.HeaderText = "Địa Chỉ";
+            this.Column11.Name = "Column11";
             // 
-            // Column4
+            // Column12
             // 
-            this.Column4.DataPropertyName = "MaPM";
-            this.Column4.HeaderText = "Mã Phiếu mượn";
-            this.Column4.Name = "Column4";
+            this.Column12.DataPropertyName = "NgaySinh";
+            this.Column12.HeaderText = "Ngày Sinh";
+            this.Column12.Name = "Column12";
             // 
-            // Column5
+            // Column13
             // 
-            this.Column5.DataPropertyName = "MaSach";
-            this.Column5.HeaderText = "Mã Sách";
-            this.Column5.Name = "Column5";
+            this.Column13.DataPropertyName = "MaSach";
+            this.Column13.HeaderText = "Mã Sách";
+            this.Column13.Name = "Column13";
+            this.Column13.Width = 80;
             // 
-            // Column6
+            // Column14
             // 
-            this.Column6.DataPropertyName = "HanTra";
-            this.Column6.HeaderText = "Hạn Trả";
-            this.Column6.Name = "Column6";
+            this.Column14.DataPropertyName = "TenSach";
+            this.Column14.HeaderText = "Tên Sách";
+            this.Column14.Name = "Column14";
+            this.Column14.Width = 120;
             // 
-            // Column7
+            // Column15
             // 
-            this.Column7.DataPropertyName = "SoLuongSM";
-            this.Column7.HeaderText = "Số Lượng Mượn";
-            this.Column7.Name = "Column7";
+            this.Column15.DataPropertyName = "Gia";
+            this.Column15.HeaderText = "Đơn Giá";
+            this.Column15.Name = "Column15";
+            // 
+            // Column16
+            // 
+            this.Column16.DataPropertyName = "MaNXB";
+            this.Column16.HeaderText = "Mã NXB";
+            this.Column16.Name = "Column16";
+            // 
+            // Column17
+            // 
+            this.Column17.DataPropertyName = "MaTL";
+            this.Column17.HeaderText = "Mã Loại";
+            this.Column17.Name = "Column17";
+            // 
+            // Column18
+            // 
+            this.Column18.DataPropertyName = "SoLuong";
+            this.Column18.HeaderText = "Số Lượng";
+            this.Column18.Name = "Column18";
+            // 
+            // Column19
+            // 
+            this.Column19.DataPropertyName = "SoTrang";
+            this.Column19.HeaderText = "Số Trang";
+            this.Column19.Name = "Column19";
+            // 
+            // Column20
+            // 
+            this.Column20.DataPropertyName = "SoSachHong";
+            this.Column20.HeaderText = "Số Sách Hỏng";
+            this.Column20.Name = "Column20";
             // 
             // QuanLymuon
             // 
@@ -784,6 +784,14 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvpn1madg;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
@@ -797,13 +805,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvpn1madg;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

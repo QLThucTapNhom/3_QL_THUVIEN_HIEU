@@ -138,7 +138,7 @@ namespace QL_THUVIEN2
                 pnmasach.Text = "";
                 pnmanv.Text = "";
                 k = 0;
-                cls.LoadData2DataGridView(dgvpn1, "select*from TRASACH");
+                cls.LoadData2DataGridView(dgvpn1, "select*from dbo.TRASACH");
             }
         }
 
