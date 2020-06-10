@@ -21,6 +21,10 @@ namespace QL_THUVIEN2
         private void TimKiemSach_Load(object sender, EventArgs e)
         {
             cls.KetNoi();
+            cls.LoadData2DataGridView(dataGridView1, "select * from SACH");
+            cls.LoadData2DataGridView(dataGridView2, "select * from DOCGIA");
+
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -33,7 +37,7 @@ namespace QL_THUVIEN2
 
             if (label8.Text == "Mã Sách")
             cls.LoadData2DataGridView(dataGridView1, "select*from Sach where masach like'%" + textBox1.Text + "%'");
-            else if (label8.Text == "Tên Sách") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where tensach like'%" + textBox1.Text + "%'");
+            else if (label8.Text == "Tên Sách") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where Tensach like'%" + textBox1.Text + "%'");
             else if (label8.Text == "Mã NXB") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where manxb like'%" + textBox1.Text + "%'");
             else if (label8.Text == "Mã Thể Loại") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where matl like'%" + textBox1.Text + "%'");
             else if (label8.Text == "Số Lượng") cls.LoadData2DataGridView(dataGridView1, "select*from Sach where soluong like'%" + textBox1.Text + "%'");
@@ -52,12 +56,12 @@ namespace QL_THUVIEN2
 
             //  cls.LoadData2DataGridView(dataGridView2, "select*from docgia where Masach like'%" + textBox2.Text + "%'");
             if (label9.Text == "Mã ĐG")
-            cls.LoadData2DataGridView(dataGridView2, "select*from docgia where madg like'%" + textBox2.Text + "%'");
-            else if (label9.Text == "SĐT") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where sdt like'%" + textBox2.Text + "%'");
-            else if (label9.Text == "Tên ĐG") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where tendg like'%" + textBox2.Text + "%'");
-            else if (label9.Text == "Giới Tính") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where diachi like'%" + textBox2.Text + "%'");
-            else if (label9.Text == "Địa Chỉ") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where Gioitinh like'%" + textBox2.Text + "%'");
-            else if (label9.Text == "Ngày Sinh") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where ngaysinh like'%" + textBox2.Text + "%'");
+            cls.LoadData2DataGridView(dataGridView2, "select*from docgia where MaDG like'%" + textBox2.Text + "%'");
+            else if (label9.Text == "SĐT") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where SDT_EMAIL like'%" + textBox2.Text + "%'");
+            else if (label9.Text == "Tên ĐG") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where TenDG like'%" + textBox2.Text + "%'");
+            else if (label9.Text == "Giới Tính") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where GioiTinh like'%" + textBox2.Text + "%'");
+            else if (label9.Text == "Địa Chỉ") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where DiaChi like'%" + textBox2.Text + "%'");
+            else if (label9.Text == "Ngày Sinh") cls.LoadData2DataGridView(dataGridView2, "select*from docgia where NgaySinh like'%" + textBox2.Text + "%'");
         
         }
 
@@ -73,12 +77,26 @@ namespace QL_THUVIEN2
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
