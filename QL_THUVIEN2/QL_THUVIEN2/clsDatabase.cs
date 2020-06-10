@@ -12,7 +12,7 @@ namespace QL_THUVIEN2
     class clsDatabase
     {
 //<<<<<<< HEAD
-        string strConnect = @"Data Source=DESKTOP-4H2CDN2;Initial Catalog=TTN_QLTV;Integrated Security=True";
+        string strConnect = @"Data Source=DESKTOP-3GSO9JU\MSSQLSERVER01;Initial Catalog=TTN_QLTV;Integrated Security=True";
 //=======
         //string strConnect = @"Data Source=WIN10PRO\SQLEXPRESS;Initial Catalog=TTN_QLTV;Integrated Security=True";
 //>>>>>>> caee2b1158c86f4558be9c1b97af909ec66fa4d4
