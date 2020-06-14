@@ -19,61 +19,40 @@ namespace QL_THUVIEN2
         }
         clsDatabase cls = new QL_THUVIEN2.clsDatabase();
        
+     
         private void Form9_Load(object sender, EventArgs e)
         {
-            ma.Enabled = false;
-            
+           
             cls.KetNoi();
             cls.LoadData2DataGridView(dgv, "select *from THELOAI");
+           
         }
 
         private void bttthemmoi_Click(object sender, EventArgs e)
         {
-            bttqlnvxoa.Enabled = false;
-            button1.Enabled = false;
-            if(bttthemmoi.Text=="Add")
-            {
-                ma.Clear();
-                ten.Clear();
-                bttthemmoi.Text = "OK";
-                ma.Focus();
-                ma.Enabled = true;
-                
-                return;
-            }
-            if (bttthemmoi.Text=="OK")
-            {
-                
-              
-                    int slg = cls.CheckID("select COUNT(matl) from theloai WHERE matl='" + ma.Text + "'");
-                        //(int)sl.ExecuteScalar();
-                    if (slg > 0) MessageBox.Show("Mã thể loại đã tồn tại!");
-                    else if(ma.Text=="")
-                {
-                    MessageBox.Show("Mã thể loại trống!");
-                }
-                    else if(ten.Text=="")
-                {
-                    MessageBox.Show("Tên Thể loại trống!");
-                }
-                    
-                    else
-                    {
-                        string sql = "insert into THELOAI values('" + ma.Text + "',N'" + ten.Text + "')";
-                       
-                        cls.ThucThiSQLTheoKetNoi(sql);
-                        MessageBox.Show("Thêm thành công!");
-                        //   HienThi();
-                        cls.LoadData2DataGridView(dgv, "select *from THELOAI");
-                    }
-                    ma.Enabled = false;
-                    bttthemmoi.Text = "Add";
-                    bttqlnvxoa.Enabled = true;
-                    button1.Enabled = true;
-                    return;
-               
+            string matl = txtma.Text.Trim();
+            string tentl = txtten.Text.Trim();
 
+            if(matl.Length != 0 && tentl.Length != 0)
+            {
+                int temp = cls.CheckID("select COUNT(matl) from theloai WHERE matl='" +matl + "'");
+                if (temp > 0)
+                {
+                    MessageBox.Show("Mã thể loại đã tồn tại!");
+                }
+                else
+                {
+                    string insert = "insert into THELOAI values('" + matl + "',N'" + tentl + "')";
+                    cls.ThucThiSQLTheoKetNoi(insert);
+                    MessageBox.Show("Thêm thành công!");
+                    cls.LoadData2DataGridView(dgv, "select *from THELOAI");
+                }
             }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đủ thông tin để hoàn tất!");
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -83,14 +62,13 @@ namespace QL_THUVIEN2
 
         private void bttqlnvxoa_Click(object sender, EventArgs e)
         {
+            string matl = txtma.Text.Trim();
             if (MessageBox.Show("Do you want to delete?(Y/N)", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                string cmd = "EXEC DEL_Theloai @matl = '" + ma.Text + "'";
-                cls.ThucThiSQLTheoKetNoi(cmd);
-                //   cmd.ExecuteNonQuery();
+                string del = "delete THELOAI where MaTL = '" + matl + "'";
+                cls.ThucThiSQLTheoKetNoi(del);
                 MessageBox.Show("Xóa Thành công!");
             }
-            //  HienThi();
             cls.LoadData2DataGridView(dgv, "select *from THELOAI");
         }
 
@@ -99,22 +77,36 @@ namespace QL_THUVIEN2
             int i = e.RowIndex;
             try
             {
-                ma.Text = dgv.Rows[i].Cells[0].Value.ToString().Trim();
-                ten.Text = dgv.Rows[i].Cells[1].Value.ToString().Trim();
+                txtma.Text = dgv.Rows[i].Cells[0].Value.ToString().Trim();
+                txtten.Text = dgv.Rows[i].Cells[1].Value.ToString().Trim();
             }
             catch (Exception) { }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string cmd= "update THELOAI set  TenTL=N'" + ten.Text + "' where MaTL='" + ma.Text + "' ";
-            //  cmd.ExecuteNonQuery();
-            cls.ThucThiSQLTheoKetNoi(cmd);
-            MessageBox.Show("Edit category successfully!");
-            // HienThi();
-            cls.LoadData2DataGridView(dgv, "select *from THELOAI");
-        }
+            string matl = txtma.Text.Trim();
+            string tentl = txtten.Text.Trim();
+            if (matl.Length != 0 && tentl.Length != 0)
+            {
+                int temp = cls.CheckID("select COUNT(matl) from theloai WHERE matl='" + matl + "'");
+                if (temp > 0)
+                {
+                    if (MessageBox.Show("Do you want to update?(Y/N)", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        string update = "update THELOAI set  TenTL=N'" + txtten.Text + "' where MaTL='" + txtma.Text + "' ";
+                        cls.ThucThiSQLTheoKetNoi(update);
+                        MessageBox.Show("Edit category successfully!");
+                        cls.LoadData2DataGridView(dgv, "select *from THELOAI");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Mã thể loại chưa tồn tại! Không thể sửa");
+                }
 
+            }
+        }
 
     }
 }
