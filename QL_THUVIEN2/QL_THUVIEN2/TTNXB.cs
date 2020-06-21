@@ -31,9 +31,9 @@ namespace QL_THUVIEN2
         private void insert()
        {
 
-            string sql="insert into NXB values('"+txtma.Text+"',N'"+txtten.Text+"',N'"+txtdiachi.Text+"','"+txtsdt.Text+"')";
+            string sql = "insert into NXB values('" + txtma.Text + "',N'" + txtten.Text + "',N'" + txtdiachi.Text + "','" + txtsdt.Text + "')";
             cls.ThucThiSQLTheoKetNoi(sql);
-       }
+        }
         private void delete()
         {
             string sql = "EXEC DEL_NXB @manxb = '" + txtma.Text + "'";
@@ -43,60 +43,24 @@ namespace QL_THUVIEN2
         }
         private void update()
         {
-            string cmd= "update NXB set TenNXB=N'" + txtten.Text + "',DiaChi=N'" + txtdiachi.Text + "',SDT_EMAIL='" + txtsdt.Text + "' where MaNXB='" + txtma.Text + "'";
+            string cmd = "update NXB set TenNXB=N'" + txtten.Text + "',DiaChi=N'" + txtdiachi.Text + "',SDT_EMAIL='" + txtsdt.Text + "' where MaNXB='" + txtma.Text + "'";
             //cmd.ExecuteNonQuery();
             cls.ThucThiSQLTheoKetNoi(cmd);
         }
         private void dgvnxb_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            int i = e.RowIndex;
+            int x = e.RowIndex;
             try
             {
-                txtma.Text = dgvnxb.Rows[i].Cells[0].Value.ToString().Trim();
-                txtten.Text = dgvnxb.Rows[i].Cells[1].Value.ToString().Trim();
-                txtdiachi.Text = dgvnxb.Rows[i].Cells[2].Value.ToString().Trim();
-                txtsdt.Text = dgvnxb.Rows[i].Cells[3].Value.ToString().Trim();
+                txtma.Text = dgvnxb.Rows[x].Cells[0].Value.ToString().Trim();
+                txtten.Text = dgvnxb.Rows[x].Cells[1].Value.ToString().Trim();
+                txtdiachi.Text = dgvnxb.Rows[x].Cells[2].Value.ToString().Trim();
+                txtsdt.Text = dgvnxb.Rows[x].Cells[3].Value.ToString().Trim();
             }
             catch (Exception a) { MessageBox.Show(a.Message); }
         }
         
-        private void bttttcnluu_Click(object sender, EventArgs e)
-        {
-           
-            if (bttthem.Text == "Add")
-            {
-                txtma.Enabled = true;
-                txtdiachi.Clear();
-                txtma.Clear();
-                txtsdt.Clear();
-                txtten.Clear();
-                button1.Enabled = false;
-                bttqlnvxoa.Enabled = false;
-                bttthem.Text = "OK";
-            }
-            else
-            {
-                bttthem.Text = "Add";
-                button1.Enabled = true;
-                bttqlnvxoa.Enabled = true;
-                txtma.Enabled = false;
-                int slg = cls.CheckID("select COUNT(manxb) from NXB WHERE maNXB='" + txtma.Text + "'");
-                //(int)sl.ExecuteScalar();
-                if (slg > 0) MessageBox.Show("Mã NXB đã tồn tại!");
-                else if(txtma.Text=="")
-                   { MessageBox.Show("Mã NXB trống!"); }
-                else if (txtten.Text=="")
-                    {
-                    MessageBox.Show("Tên NXB trống");
-                }
-                else
-                {
-                    insert();
-                    MessageBox.Show(" Thêm thành công!");
-                }
-                HienThi();
-            }
-        }
+        
 
  
         private void bttqlnvxoa_Click(object sender, EventArgs e)
@@ -127,21 +91,59 @@ namespace QL_THUVIEN2
             cls.KetNoi();
             HienThi();
         }
+        private void Dgvnxb_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int x;
+            x = dgvnxb.CurrentRow.Index;
+            txtma.Text = dgvnxb.Rows[x].Cells[0].Value.ToString();
+            txtten.Text = dgvnxb.Rows[x].Cells[1].Value.ToString();
+            txtdiachi.Text = dgvnxb.Rows[x].Cells[2].Value.ToString();
+            txtsdt.Text = dgvnxb.Rows[x].Cells[3].Value.ToString();
+
+        }
 
         private void paneldg_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void Dgvnxb_CellClick(object sender, DataGridViewCellEventArgs e)
+
+        private void bttttcnluu_Click(object sender, EventArgs e)
         {
-            int a;
-            a = dgvnxb.CurrentRow.Index;
-            txtma.Text = dgvnxb.Rows[a].Cells[0].Value.ToString();
-            txtten.Text = dgvnxb.Rows[a].Cells[1].Value.ToString();
-            txtdiachi.Text = dgvnxb.Rows[a].Cells[2].Value.ToString();
-            txtsdt.Text = dgvnxb.Rows[a].Cells[3].Value.ToString();
-         
+
+            if (bttthem.Text == "Add")
+            {
+                txtma.Enabled = true;
+                txtdiachi.Clear();
+                txtma.Clear();
+                txtsdt.Clear();
+                txtten.Clear();
+                button1.Enabled = false;
+                bttqlnvxoa.Enabled = false;
+                bttthem.Text = "OK";
+            }
+            else
+            {
+                bttthem.Text = "Add";
+                button1.Enabled = true;
+                bttqlnvxoa.Enabled = true;
+                txtma.Enabled = false;
+                int slg = cls.CheckID("select COUNT(manxb) from NXB WHERE maNXB='" + txtma.Text + "'");
+                //(int)sl.ExecuteScalar();
+                if (slg > 0) MessageBox.Show("Mã NXB đã tồn tại!");
+                else if (txtma.Text == "")
+                { MessageBox.Show("Mã NXB trống!"); }
+                else if (txtten.Text == "")
+                {
+                    MessageBox.Show("Tên NXB trống");
+                }
+                else
+                {
+                    insert();
+                    MessageBox.Show(" Thêm thành công!");
+                }
+                HienThi();
+            }
         }
     }
 }

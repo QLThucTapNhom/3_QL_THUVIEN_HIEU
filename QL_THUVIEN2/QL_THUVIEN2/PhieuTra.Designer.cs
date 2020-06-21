@@ -156,12 +156,13 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label2.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(401, 19);
+            this.label2.Location = new System.Drawing.Point(386, 18);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 32);
             this.label2.TabIndex = 41;
             this.label2.Text = "Trả Sách";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pnngaytra
             // 
@@ -176,12 +177,13 @@
             this.pnngaytra.Name = "pnngaytra";
             this.pnngaytra.Size = new System.Drawing.Size(163, 26);
             this.pnngaytra.TabIndex = 40;
+            this.pnngaytra.ValueChanged += new System.EventHandler(this.pnngaytra_ValueChanged);
             // 
             // pnmanv
             // 
             this.pnmanv.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnmanv.FormattingEnabled = true;
-            this.pnmanv.Location = new System.Drawing.Point(169, 156);
+            this.pnmanv.Location = new System.Drawing.Point(169, 161);
             this.pnmanv.Margin = new System.Windows.Forms.Padding(4);
             this.pnmanv.Name = "pnmanv";
             this.pnmanv.Size = new System.Drawing.Size(179, 27);
@@ -238,7 +240,7 @@
             // 
             this.pnmasach.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnmasach.FormattingEnabled = true;
-            this.pnmasach.Location = new System.Drawing.Point(169, 110);
+            this.pnmasach.Location = new System.Drawing.Point(169, 115);
             this.pnmasach.Margin = new System.Windows.Forms.Padding(4);
             this.pnmasach.Name = "pnmasach";
             this.pnmasach.Size = new System.Drawing.Size(179, 27);
@@ -273,6 +275,7 @@
             this.dgvpn1.Size = new System.Drawing.Size(674, 255);
             this.dgvpn1.TabIndex = 10;
             this.dgvpn1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpn1_CellClick);
+            this.dgvpn1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpn1_CellContentClick);
             this.dgvpn1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvpn1_RowEnter);
             // 
             // dataGridViewTextBoxColumn1
@@ -310,11 +313,12 @@
             // 
             this.pnmaphieu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnmaphieu.FormattingEnabled = true;
-            this.pnmaphieu.Location = new System.Drawing.Point(169, 62);
+            this.pnmaphieu.Location = new System.Drawing.Point(169, 67);
             this.pnmaphieu.Margin = new System.Windows.Forms.Padding(4);
             this.pnmaphieu.Name = "pnmaphieu";
             this.pnmaphieu.Size = new System.Drawing.Size(179, 27);
             this.pnmaphieu.TabIndex = 8;
+            this.pnmaphieu.SelectedIndexChanged += new System.EventHandler(this.pnmaphieu_SelectedIndexChanged);
             // 
             // label5
             // 
