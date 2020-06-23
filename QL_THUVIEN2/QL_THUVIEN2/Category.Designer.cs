@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ten = new System.Windows.Forms.TextBox();
-            this.ma = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtten = new System.Windows.Forms.TextBox();
+            this.btthoat = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvpn1madg = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bttqlnvxoa = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btsua = new System.Windows.Forms.Button();
             this.bttthemmoi = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtma = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -48,12 +48,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.panel1.Controls.Add(this.ten);
-            this.panel1.Controls.Add(this.ma);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.txtten);
+            this.panel1.Controls.Add(this.txtma);
+            this.panel1.Controls.Add(this.btthoat);
             this.panel1.Controls.Add(this.dgv);
             this.panel1.Controls.Add(this.bttqlnvxoa);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btsua);
             this.panel1.Controls.Add(this.bttthemmoi);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
@@ -65,32 +65,25 @@
             this.panel1.Size = new System.Drawing.Size(558, 458);
             this.panel1.TabIndex = 1;
             // 
-            // ten
+            // txtten
             // 
-            this.ten.Location = new System.Drawing.Point(334, 91);
-            this.ten.Name = "ten";
-            this.ten.Size = new System.Drawing.Size(180, 26);
-            this.ten.TabIndex = 30;
+            this.txtten.Location = new System.Drawing.Point(334, 99);
+            this.txtten.Name = "txtten";
+            this.txtten.Size = new System.Drawing.Size(180, 26);
+            this.txtten.TabIndex = 30;
             // 
-            // ma
+            // btthoat
             // 
-            this.ma.Location = new System.Drawing.Point(334, 22);
-            this.ma.Name = "ma";
-            this.ma.Size = new System.Drawing.Size(180, 26);
-            this.ma.TabIndex = 29;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button2.Location = new System.Drawing.Point(420, 150);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 56);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Thoát";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btthoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btthoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btthoat.Location = new System.Drawing.Point(420, 150);
+            this.btthoat.Name = "btthoat";
+            this.btthoat.Size = new System.Drawing.Size(113, 56);
+            this.btthoat.TabIndex = 27;
+            this.btthoat.Text = "Thoát";
+            this.btthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btthoat.UseVisualStyleBackColor = false;
+            this.btthoat.Click += new System.EventHandler(this.button2_Click);
             // 
             // dgv
             // 
@@ -131,18 +124,18 @@
             this.bttqlnvxoa.UseVisualStyleBackColor = false;
             this.bttqlnvxoa.Click += new System.EventHandler(this.bttqlnvxoa_Click);
             // 
-            // button1
+            // btsua
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(28, 94);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 62);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Sửa";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btsua.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btsua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btsua.Location = new System.Drawing.Point(28, 94);
+            this.btsua.Name = "btsua";
+            this.btsua.Size = new System.Drawing.Size(134, 62);
+            this.btsua.TabIndex = 24;
+            this.btsua.Text = "Sửa";
+            this.btsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btsua.UseVisualStyleBackColor = false;
+            this.btsua.Click += new System.EventHandler(this.button1_Click);
             // 
             // bttthemmoi
             // 
@@ -161,7 +154,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(224, 98);
+            this.label2.Location = new System.Drawing.Point(224, 106);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 19);
@@ -172,12 +165,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(224, 29);
+            this.label1.Location = new System.Drawing.Point(224, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Thể Loại";
+            // 
+            // txtma
+            // 
+            this.txtma.Location = new System.Drawing.Point(334, 42);
+            this.txtma.Name = "txtma";
+            this.txtma.Size = new System.Drawing.Size(180, 26);
+            this.txtma.TabIndex = 29;
             // 
             // Category
             // 
@@ -201,16 +201,16 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btthoat;
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.Button bttqlnvxoa;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btsua;
         private System.Windows.Forms.Button bttthemmoi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox ten;
-        private System.Windows.Forms.TextBox ma;
+        private System.Windows.Forms.TextBox txtten;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvpn1madg;
+        private System.Windows.Forms.TextBox txtma;
     }
 }

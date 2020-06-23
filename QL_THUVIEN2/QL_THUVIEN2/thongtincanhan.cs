@@ -24,27 +24,27 @@ namespace QL_THUVIEN2
         //    cnn = new SqlConnection(ketnoi);
         //    cnn.Open();
         //}
-     //   SqlConnection cnn;
+        //   SqlConnection cnn;
         private void HienThi()
         {
-           
+
             dt.LoadData2DataGridView(dataGridView1, "select TaiKhoan, TenNV, GioiTinh, DiaChi, SDT_EMAIL, NgaySinh from NHANVIEN where TAIKHOAN = '" + Form1.tendn + "'");
         }
 
         private void thongtincanhan_Load(object sender, EventArgs e)
         {
             dt.KetNoi();
-           // ketnoi();
+            // ketnoi();
             HienThi();
         }
 
-      
+
 
         private void button5_Click(object sender, EventArgs e)
         {
             if (txtSoDienThoai.Text.Length - 1 <= 0)
                 MessageBox.Show("Phone number cannot be smaller than 0!");
-           else if (txtSoDienThoai.Text.ToString().Trim().Length - 1 >=12)
+            else if (txtSoDienThoai.Text.ToString().Trim().Length - 1 >= 12)
             {
                 MessageBox.Show("Phone number cannot be bigger than 12 ");
 
@@ -53,7 +53,7 @@ namespace QL_THUVIEN2
             {
 
                 string s = txtns.Value.Year + "/" + txtns.Value.Month + "/" + txtns.Value.Day;
-                string cmd ="update NHANVIEN set TenNV=N'" + textBox1.Text + "',GioiTinh=N'" + txtGIOITINH.Text + "',DiaChi=N'" + txtDiaChi.Text + "',NgaySinh=N'" + s + "',SDT_EMAIL=N'" + txtSoDienThoai.Text  + "' where TAIKHOAN='" + Form1.tendn + "'";
+                string cmd = "update NHANVIEN set TenNV=N'" + textBox1.Text + "',GioiTinh=N'" + txtGIOITINH.Text + "',DiaChi=N'" + txtDiaChi.Text + "',NgaySinh=N'" + s + "',SDT_EMAIL=N'" + txtSoDienThoai.Text + "' where TAIKHOAN='" + Form1.tendn + "'";
                 //    cmd.ExecuteNonQuery();
                 dt.ThucThiSQLTheoKetNoi(cmd);
                 HienThi();
@@ -69,17 +69,8 @@ namespace QL_THUVIEN2
 
         private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            //int i = e.RowIndex;
-            ////    bttqltk.Visible = true;
-           
-            //textBox1.Text = dataGridView1.Rows[i].Cells[1].Value.ToString();
-            //txtDiaChi.Text = dataGridView1.Rows[i].Cells[3].Value.ToString();
-            //txtSoDienThoai.Text = dataGridView1.Rows[i].Cells[4].Value.ToString();
-            //DateTime dt1 = Convert.ToDateTime(dataGridView1.Rows[i].Cells[5].Value.ToString());
-            //txtns.Value = dt1;
-            ////txtns.Text = dataGridView1.Rows[i].Cells[5].Value.ToString();
-            //txtGIOITINH.Text = dataGridView1.Rows[i].Cells[2].Value.ToString();
-            
+
+
 
         }
 
@@ -93,8 +84,8 @@ namespace QL_THUVIEN2
             txtSoDienThoai.Text = dataGridView1.Rows[a].Cells[4].Value.ToString();
             DateTime dt1 = Convert.ToDateTime(dataGridView1.Rows[a].Cells[5].Value.ToString());
             txtns.Value = dt1;
-            
-           
+
+
         }
         
 

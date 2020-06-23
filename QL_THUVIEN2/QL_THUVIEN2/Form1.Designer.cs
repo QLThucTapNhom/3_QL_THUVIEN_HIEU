@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tphome = new System.Windows.Forms.TabPage();
+            this.lbThongBao = new System.Windows.Forms.Label();
             this.paneldangnhap = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.txtdnmatkhau = new System.Windows.Forms.TextBox();
@@ -93,7 +94,6 @@
             this.txtttcnten = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lbThongBao = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tphome.SuspendLayout();
             this.paneldangnhap.SuspendLayout();
@@ -141,6 +141,17 @@
             this.tphome.Size = new System.Drawing.Size(1176, 113);
             this.tphome.TabIndex = 0;
             this.tphome.Text = "Trang Chủ";
+            // 
+            // lbThongBao
+            // 
+            this.lbThongBao.AutoSize = true;
+            this.lbThongBao.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.lbThongBao.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbThongBao.Location = new System.Drawing.Point(441, 38);
+            this.lbThongBao.Name = "lbThongBao";
+            this.lbThongBao.Size = new System.Drawing.Size(583, 32);
+            this.lbThongBao.TabIndex = 6;
+            this.lbThongBao.Text = "Bạn cần đăng nhập để sử dụng các chức năng!";
             // 
             // paneldangnhap
             // 
@@ -858,17 +869,6 @@
             this.panel3.Size = new System.Drawing.Size(1005, 521);
             this.panel3.TabIndex = 2;
             // 
-            // lbThongBao
-            // 
-            this.lbThongBao.AutoSize = true;
-            this.lbThongBao.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.lbThongBao.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbThongBao.Location = new System.Drawing.Point(441, 38);
-            this.lbThongBao.Name = "lbThongBao";
-            this.lbThongBao.Size = new System.Drawing.Size(583, 32);
-            this.lbThongBao.TabIndex = 6;
-            this.lbThongBao.Text = "Bạn cần đăng nhập để sử dụng các chức năng!";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -881,6 +881,7 @@
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quan Ly Thu Vien";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);

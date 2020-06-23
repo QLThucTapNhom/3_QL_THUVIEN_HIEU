@@ -28,16 +28,16 @@ namespace QL_THUVIEN2
             // ketnoi();
             cls.KetNoi();
             cls.LoadData2DataGridView(dgvpn1, "select *from TRASACH");
-          //  i = 1;
-        //    HienThi();
-            
+            //  i = 1;
+            //    HienThi();
+           
             
         }
         private void update_TS()
         {
             string s = pnngaytra.Value.Year + "/" + pnngaytra.Value.Month + "/" + pnngaytra.Value.Day;
-           string sql= "update TRASACH set NgayTra=convert(smalldatetime,'" + s.ToString() + "'),PhatQuaHan='" + pnphat.Text + "' where MaPM='"+pnmaphieu.Text+"' and MaSach='"+pnmasach.Text+"' ";
-        
+            string sql = "update TRASACH set NgayTra=convert(smalldatetime,'" + s.ToString() + "'),PhatQuaHan='" + pnphat.Text + "' where MaPM='" + pnmaphieu.Text + "' and MaSach='" + pnmasach.Text + "' ";
+
             cls.ThucThiSQLTheoKetNoi(sql);
         }
         private void insert()
@@ -45,19 +45,20 @@ namespace QL_THUVIEN2
 
             string s = pnngaytra.Value.Year + "/" + pnngaytra.Value.Month + "/" + pnngaytra.Value.Day;
             string sql = "insert into TRASACH (MaPM,MaSach,TaiKhoan,NgayTra,PhatQuaHan) values('" + pnmaphieu.Text + "','" + pnmasach.Text + "','" + pnmanv.Text + "',convert(smalldatetime,'" + s.ToString() + "'),'" + pnphat.Text + "')";
-       
+
             cls.ThucThiSQLTheoKetNoi(sql);
         }
         private void delete()
         {
-           string sql="delete from TRASACH where MaPM='" + pnmaphieu.Text + "' and MaSach='"+pnmasach.Text+"'";
-        
+            string sql = "delete from TRASACH where MaPM='" + pnmaphieu.Text + "' and MaSach='" + pnmasach.Text + "'";
+
             cls.ThucThiSQLTheoKetNoi(sql);
         }
         private void delete_mp()
         {
+
             string cmd = "delete from MAPHIEU where MaPM='" + pnmaphieu.Text + "'";
-           
+
             cls.ThucThiSQLTheoKetNoi(cmd);
             string cmd1 = "delete from QL_PHIEUMUON where MaPM='" + pnmaphieu.Text + "'";
 
@@ -65,15 +66,15 @@ namespace QL_THUVIEN2
         }
         private void combobox()
         {
-           
+
             cls.KetNoi();
-         
+
             cls.LoadCombo(pnmaphieu, "select MaPM from PHIEUMUON");
-            
+
             cls.LoadCombo(pnmasach, "select MaSach from SACH ");
-           
+
             cls.LoadCombo(pnmanv, "select MaNV from NHANVIEN");
-            
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -86,10 +87,10 @@ namespace QL_THUVIEN2
         }
         private void bttqlnvxoa_Click(object sender, EventArgs e)
         {
-            string cmd= "update SACH set TinhTrang=0 where MaSach='" + pnmasach.Text + "'";
+            string cmd = "update SACH set TinhTrang=0 where MaSach='" + pnmasach.Text + "'";
             //  cmd.ExecuteNonQuery();
             cls.ThucThiSQLTheoKetNoi(cmd);
-            string cmd1 ="delete from QL_PHIEUMUON where MaPM='" + pnmaphieu.Text + "' and MaSach='" + pnmasach.Text + "'";
+            string cmd1 = "delete from QL_PHIEUMUON where MaPM='" + pnmaphieu.Text + "' and MaSach='" + pnmasach.Text + "'";
             //  cmd1.ExecuteNonQuery();
             cls.ThucThiSQLTheoKetNoi(cmd1);
             delete();
@@ -117,11 +118,11 @@ namespace QL_THUVIEN2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (k == 1 && pnphat.Text =="0")
+            if (k == 1 && pnphat.Text == "0")
             {
                 MessageBox.Show("Fine isn't update!");
             }
-            else if(pnphat.Text=="")
+            else if (pnphat.Text == "")
             {
                 MessageBox.Show("Please choose book will be returned!");
             }
@@ -138,13 +139,14 @@ namespace QL_THUVIEN2
                 pnmasach.Text = "";
                 pnmanv.Text = "";
                 k = 0;
-                cls.LoadData2DataGridView(dgvpn1, "select*from TRASACH");
+                cls.LoadData2DataGridView(dgvpn1, "select*from dbo.TRASACH");
             }
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void pnmanv_SelectedIndexChanged(object sender, EventArgs e)
@@ -176,6 +178,26 @@ namespace QL_THUVIEN2
                 k = 0;
             }
             catch (Exception) { }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pnmaphieu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvpn1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pnngaytra_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
