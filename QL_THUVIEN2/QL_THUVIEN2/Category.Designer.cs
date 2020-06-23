@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Category));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtten = new System.Windows.Forms.TextBox();
+            this.txtma = new System.Windows.Forms.TextBox();
             this.btthoat = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,7 +41,7 @@
             this.bttthemmoi = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtma = new System.Windows.Forms.TextBox();
+            this.btnLammoi = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +49,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel1.Controls.Add(this.btnLammoi);
             this.panel1.Controls.Add(this.txtten);
             this.panel1.Controls.Add(this.txtma);
             this.panel1.Controls.Add(this.btthoat);
@@ -72,13 +74,20 @@
             this.txtten.Size = new System.Drawing.Size(180, 26);
             this.txtten.TabIndex = 30;
             // 
+            // txtma
+            // 
+            this.txtma.Location = new System.Drawing.Point(334, 42);
+            this.txtma.Name = "txtma";
+            this.txtma.Size = new System.Drawing.Size(180, 26);
+            this.txtma.TabIndex = 29;
+            // 
             // btthoat
             // 
             this.btthoat.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btthoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btthoat.Location = new System.Drawing.Point(420, 150);
+            this.btthoat.Location = new System.Drawing.Point(472, 179);
             this.btthoat.Name = "btthoat";
-            this.btthoat.Size = new System.Drawing.Size(113, 56);
+            this.btthoat.Size = new System.Drawing.Size(74, 41);
             this.btthoat.TabIndex = 27;
             this.btthoat.Text = "Thoát";
             this.btthoat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -172,12 +181,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Thể Loại";
             // 
-            // txtma
+            // btnLammoi
             // 
-            this.txtma.Location = new System.Drawing.Point(334, 42);
-            this.txtma.Name = "txtma";
-            this.txtma.Size = new System.Drawing.Size(180, 26);
-            this.txtma.TabIndex = 29;
+            this.btnLammoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnLammoi.Location = new System.Drawing.Point(439, 133);
+            this.btnLammoi.Name = "btnLammoi";
+            this.btnLammoi.Size = new System.Drawing.Size(75, 40);
+            this.btnLammoi.TabIndex = 31;
+            this.btnLammoi.Text = "Mới";
+            this.btnLammoi.UseVisualStyleBackColor = false;
+            this.btnLammoi.Click += new System.EventHandler(this.BtnLammoi_Click);
             // 
             // Category
             // 
@@ -212,5 +225,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvpn1madg;
         private System.Windows.Forms.TextBox txtma;
+        private System.Windows.Forms.Button btnLammoi;
     }
 }
