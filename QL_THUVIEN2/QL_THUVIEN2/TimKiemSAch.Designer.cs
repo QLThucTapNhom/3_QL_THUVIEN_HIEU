@@ -323,11 +323,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(221, 147);
+            this.label4.Location = new System.Drawing.Point(240, 147);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(306, 25);
+            this.label4.Size = new System.Drawing.Size(236, 25);
             this.label4.TabIndex = 7;
-            this.label4.Text = "INFORMATION OF READER";
+            this.label4.Text = "THÔNG TIN ĐỘC GIẢ";
             // 
             // groupBox4
             // 

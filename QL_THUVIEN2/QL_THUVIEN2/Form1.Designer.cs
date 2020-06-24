@@ -85,15 +85,16 @@
             this.ttcnsdt = new System.Windows.Forms.TextBox();
             this.ttcndiachi = new System.Windows.Forms.TextBox();
             this.ttcnten = new System.Windows.Forms.TextBox();
-            this.ttcnma = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.txtttcnten = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.ttcnma = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tphome.SuspendLayout();
             this.paneldangnhap.SuspendLayout();
@@ -111,6 +112,7 @@
             this.paneldsnv.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvnvdanhsach)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -208,7 +210,6 @@
             this.txtdntaikhoan.Size = new System.Drawing.Size(154, 26);
             this.txtdntaikhoan.TabIndex = 0;
             this.txtdntaikhoan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtdntaikhoan.TextChanged += new System.EventHandler(this.txtdntaikhoan_TextChanged);
             // 
             // label10
             // 
@@ -647,7 +648,7 @@
             // 
             this.ttcngioitinh.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ttcngioitinh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ttcngioitinh.Location = new System.Drawing.Point(163, 142);
+            this.ttcngioitinh.Location = new System.Drawing.Point(182, 145);
             this.ttcngioitinh.Name = "ttcngioitinh";
             this.ttcngioitinh.Size = new System.Drawing.Size(178, 26);
             this.ttcngioitinh.TabIndex = 25;
@@ -668,26 +669,27 @@
             // bttqlnvxoa
             // 
             this.bttqlnvxoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bttqlnvxoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.bttqlnvxoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bttqlnvxoa.Location = new System.Drawing.Point(586, 454);
+            this.bttqlnvxoa.Location = new System.Drawing.Point(552, 454);
             this.bttqlnvxoa.Name = "bttqlnvxoa";
             this.bttqlnvxoa.Size = new System.Drawing.Size(113, 55);
             this.bttqlnvxoa.TabIndex = 22;
-            this.bttqlnvxoa.Text = "Delete";
+            this.bttqlnvxoa.Text = "Xóa";
             this.bttqlnvxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.bttqlnvxoa.UseVisualStyleBackColor = true;
+            this.bttqlnvxoa.UseVisualStyleBackColor = false;
             this.bttqlnvxoa.Click += new System.EventHandler(this.button23_Click_1);
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(319, 454);
+            this.button1.Location = new System.Drawing.Point(385, 454);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 55);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Edit";
+            this.button1.Text = "Sửa";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -768,19 +770,10 @@
             // 
             this.ttcnten.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.ttcnten.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ttcnten.Location = new System.Drawing.Point(163, 103);
+            this.ttcnten.Location = new System.Drawing.Point(182, 106);
             this.ttcnten.Name = "ttcnten";
             this.ttcnten.Size = new System.Drawing.Size(178, 26);
             this.ttcnten.TabIndex = 11;
-            // 
-            // ttcnma
-            // 
-            this.ttcnma.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.ttcnma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ttcnma.Location = new System.Drawing.Point(163, 67);
-            this.ttcnma.Name = "ttcnma";
-            this.ttcnma.Size = new System.Drawing.Size(178, 26);
-            this.ttcnma.TabIndex = 10;
             // 
             // label19
             // 
@@ -789,7 +782,7 @@
             this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.label19.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Maroon;
-            this.label19.Location = new System.Drawing.Point(359, 19);
+            this.label19.Location = new System.Drawing.Point(363, 3);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(262, 32);
             this.label19.TabIndex = 8;
@@ -833,7 +826,7 @@
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label13.Location = new System.Drawing.Point(57, 149);
+            this.label13.Location = new System.Drawing.Point(76, 152);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(59, 19);
             this.label13.TabIndex = 2;
@@ -844,30 +837,51 @@
             this.txtttcnten.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtttcnten.AutoSize = true;
             this.txtttcnten.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtttcnten.Location = new System.Drawing.Point(57, 110);
+            this.txtttcnten.Location = new System.Drawing.Point(76, 113);
             this.txtttcnten.Name = "txtttcnten";
             this.txtttcnten.Size = new System.Drawing.Size(92, 19);
             this.txtttcnten.TabIndex = 1;
             this.txtttcnten.Text = "Tên nhân viên";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.paneldsnv);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Location = new System.Drawing.Point(178, 139);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1005, 521);
+            this.panel3.TabIndex = 2;
             // 
             // label11
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(57, 74);
+            this.label11.Location = new System.Drawing.Point(76, 77);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 19);
             this.label11.TabIndex = 0;
             this.label11.Text = "Tài khoản";
             // 
-            // panel3
+            // ttcnma
             // 
-            this.panel3.Controls.Add(this.paneldsnv);
-            this.panel3.Location = new System.Drawing.Point(178, 139);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1005, 521);
-            this.panel3.TabIndex = 2;
+            this.ttcnma.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ttcnma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ttcnma.Location = new System.Drawing.Point(182, 70);
+            this.ttcnma.Name = "ttcnma";
+            this.ttcnma.Size = new System.Drawing.Size(178, 26);
+            this.ttcnma.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::QL_THUVIEN2.Properties.Resources.tải_xuống;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1005, 521);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -904,6 +918,7 @@
             this.paneldsnv.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvnvdanhsach)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -958,14 +973,12 @@
         private System.Windows.Forms.TextBox ttcnsdt;
         private System.Windows.Forms.TextBox ttcndiachi;
         private System.Windows.Forms.TextBox ttcnten;
-        private System.Windows.Forms.TextBox ttcnma;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label txtttcnten;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvdsnvma;
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvdsnvten;
@@ -975,6 +988,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dgvdsnvngaysinh;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbThongBao;
+        private System.Windows.Forms.TextBox ttcnma;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
