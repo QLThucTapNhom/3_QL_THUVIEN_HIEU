@@ -63,7 +63,7 @@ namespace QL_THUVIEN2
         private void bttqlnvxoa_Click(object sender, EventArgs e)
         {
             string matl = txtma.Text.Trim();
-            if (MessageBox.Show("Do you want to delete?(Y/N)", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn chắc chắn muốn xóa?(Y/N)", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 string del = "delete THELOAI where MaTL = '" + matl + "'";
                 cls.ThucThiSQLTheoKetNoi(del);
@@ -92,11 +92,11 @@ namespace QL_THUVIEN2
                 int temp = cls.CheckID("select COUNT(matl) from theloai WHERE matl='" + matl + "'");
                 if (temp > 0)
                 {
-                    if (MessageBox.Show("Do you want to update?(Y/N)", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show("Bạn chắc chắn muốn sửa?(Y/N)", "Update", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         string update = "update THELOAI set  TenTL=N'" + txtten.Text + "' where MaTL='" + txtma.Text + "' ";
                         cls.ThucThiSQLTheoKetNoi(update);
-                        MessageBox.Show("Edit category successfully!");
+                        MessageBox.Show("Sửa thành công!");
                         cls.LoadData2DataGridView(dgv, "select *from THELOAI");
                     }
                 }
@@ -108,5 +108,10 @@ namespace QL_THUVIEN2
             }
         }
 
+        private void BtnLammoi_Click(object sender, EventArgs e)
+        {
+            txtma.Clear();
+            txtten.Clear();
+        }
     }
 }

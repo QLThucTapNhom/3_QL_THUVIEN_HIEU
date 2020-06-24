@@ -18,8 +18,8 @@ namespace QL_THUVIEN2
             InitializeComponent();
         }
         clsDatabase cls = new clsDatabase();
-        string tk;  
-  
+        string tk;
+
         private void HienThi()
         {
             cls.LoadData2DataGridView(dgvnvdanhsach, "select TaiKhoan,TenNV,GioiTinh,DiaChi,SDT_EMAIL,NgaySinh from NHANVIEN");
@@ -68,7 +68,7 @@ namespace QL_THUVIEN2
             {
                 string s = ttcnngaysinh.Value.Year + "/" + ttcnngaysinh.Value.Month + "/" + ttcnngaysinh.Value.Day;
                 string sql =
-                    "insert into NHANVIEN(TaiKhoan,TenNV,GioiTinh,DiaChi,SDT_EMAIL,NgaySinh) values('" + ttcnma.Text + "',N'" + ttcnten.Text + "',N'" + ttcngioitinh.Text + "',N'" + ttcndiachi.Text + "','" + ttcnsdt.Text + "'," + s + ")";
+                    "insert into NHANVIEN(TaiKhoan,TenNV,GioiTinh,DiaChi,SDT_EMAIL,NgaySinh,) values('" + ttcnma.Text + "',N'" + ttcnten.Text + "',N'" + ttcngioitinh.Text + "',N'" + ttcndiachi.Text + "','" + ttcnsdt.Text + "'," + s + ")";
 
 
                 cls.ThucThiSQLTheoKetNoi(sql);
@@ -140,9 +140,9 @@ namespace QL_THUVIEN2
         }
         // mat khau//
         public static string tendn, matkhau, quyen;
-    //    SqlCommand sqlCommand;
+        //    SqlCommand sqlCommand;
 
-     
+
         private void button22_Click(object sender, EventArgs e)
         {
 
@@ -224,7 +224,7 @@ namespace QL_THUVIEN2
 
         }
 
-       
+
         private void bttttcnluu_Click(object sender, EventArgs e)
         {
 
@@ -235,6 +235,7 @@ namespace QL_THUVIEN2
 
             update();
             MessageBox.Show("Chỉnh Sửa thành công!");
+            cls.LoadData2DataGridView(dgvnvdanhsach, "select * from NHANVIEN");
             HienThi();
         }
 
@@ -248,7 +249,7 @@ namespace QL_THUVIEN2
             }
         }
 
-   
+
         private void button11_Click(object sender, EventArgs e)
         {
             TTNXB frm5 = new TTNXB();
@@ -261,7 +262,7 @@ namespace QL_THUVIEN2
 
         private void listBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-          
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -322,14 +323,45 @@ namespace QL_THUVIEN2
             ttcnngaysinh.Value = dt1;
         }
 
-        private void txtdntaikhoan_TextChanged(object sender, EventArgs e)
-        {
+        //    private void BtnThem_Click(object sender, EventArgs e)
+        //    {
+        //        if (btnThem.Text == "Thêm")
+        //        {
+        //            // txtma.Focus();
+        //            ttcndiachi.Clear();
+        //            ttcngioitinh.Clear();
+        //            ttcnma.Clear();
+        //            ttcnsdt.Clear();
+        //            ttcnten.Clear();
+        //            btnThem.Text = "OK";
+        //            button1.Enabled = false;
+        //            bttqlnvxoa.Enabled = false;
+        //            ttcnma.Enabled = true;
 
-        }
+        //        }
+        //        else
+        //        {
+        //            insert();
+        //            //  HienThi();
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        //            cls.LoadData2DataGridView(dgvnvdanhsach, "select *from docgia");
+        //            ttcnma.Enabled = false;
+        //            btnThem.Text = "Add";
+        //            button1.Enabled = true;
+        //            bttqlnvxoa.Enabled = true;
+        //        }
+        //    }
+        //}
 
-        }
+        //private void txtdntaikhoan_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        //private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }
+

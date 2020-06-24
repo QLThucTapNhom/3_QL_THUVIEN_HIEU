@@ -98,5 +98,10 @@ namespace QL_THUVIEN2
         {
 
         }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

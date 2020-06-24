@@ -133,7 +133,7 @@ namespace QL_THUVIEN2
                 string cmd1 = "delete from QL_PHIEUMUON where MaPM='" + pnmaphieu.Text + "' and MaSach='" + pnmasach.Text + "'";
                 cls.ThucThiSQLTheoKetNoi(cmd1);
                 delete();
-                MessageBox.Show("Book is returned!");
+                MessageBox.Show("Trả sách thành công!");
                 pnphat.Text = "";
                 pnmaphieu.Text = "";
                 pnmasach.Text = "";
